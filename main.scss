@@ -16,7 +16,8 @@ $duration-shorter: 70ms;
 $duration-short: 100ms;
 $duration-base: 200ms;
 $duration-long: 400ms;
-$duration-longer: 2500ms;
+$duration-longer: 700ms;
+$duration-message: 2500ms;
 
 //easing tokens
 $easing-custom-1: cubic-bezier(.67, 0, 0, 1);
@@ -122,6 +123,10 @@ h5 {
     
     &.longer {
         transition-duration: $duration-longer;      
+    }
+    
+    &.message {
+      transition-duration: $duration-message;
     }
     
     &:hover {

@@ -68,6 +68,8 @@ h5 {
     .demo.duration.long {
       transition-duration: 400ms; }
     .demo.duration.longer {
+      transition-duration: 700ms; }
+    .demo.duration.message {
       transition-duration: 2500ms; }
     .demo.duration:hover {
       background: #00d400;
@@ -80,7 +82,7 @@ h5 {
   border-radius: 1.5rem;
   background-color: #006AD4;
   animation-name: balls;
-  animation-duration: 2500ms;
+  animation-duration: 700ms;
   animation-delay: 0.5s;
   animation-iteration-count: infinite; }
   .ball.custom-easing {
