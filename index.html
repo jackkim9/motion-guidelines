@@ -7,27 +7,18 @@
   </head>
 
   <body>
+    <!-- HEADER -->
     <header>
       <h1>Liquid: Motion Guidelines</h1>
       <h2>Edit UI</h2>
     </header>
-    <!--
-    <div class="section tableofcontent">
-      <h3>Table of content</h3>
-      <ul>
-        <li>Introduction</li>
-        <li>Introduction</li>
-        <li>Introduction</li>
-        <li>Introduction</li>
-        <li>Introduction</li>
-      </ul>
-    </div>
-    -->
+
     <div class="section introduction">
       <h3>Introduction</h3>
-      <h4>Cohesive rhythe of the animation and motion helps the user to....</h4>
+      <h4>Cohesive rhythm of the animation and motion helps the user to....</h4>
     </div>
 
+    <!-- DURATION -->
     <div class="section duration">
       <h3>Duration</h3>
       <h4>Explanation and some comments about the science and philosophy behind duration goes here</h4>
@@ -50,6 +41,7 @@
       </div>
     </div>
 
+    <!-- EASING -->
     <div class="section easing">
       <h3>Easing</h3>
       <h4>Explanation and some comments about the science and philosophy behind easing goes here</h4>
@@ -77,7 +69,8 @@
       <h4>maybe an example of an svg animation</h4>
        <div class="demo placeholder"></div>
     </div>
-      
+    
+    <!-- MOTION TYPES -->
     <div class="section type">
       <h3>Motion Types</h3>
       <h4>Explanation and some comments about the philosophy behind motion types goes here</h4>  
@@ -111,12 +104,7 @@
         </label>
       </input>
 
-      <!--
-      <h4>Slides from Top</h4>
-      <h5>What it is in CSS</h5>
-      <div class="motion-demo top"></div>
-    </div>
-      -->
+    <!-- UI EXAMPLES -->
     <div class="section example">
       <h3>Examples in the Edit UI</h3>
       <h4>Button</h4>
@@ -135,6 +123,7 @@
         </label>
       </input>
 
+      <!-- FLOAT LABEL -->
       <h4>Float Label</h4>
       <h5>Input</h5>
       <div class="fullwidth">
@@ -167,71 +156,90 @@
           </div>
       </form>
       </div><p></br></br>
-      <div class="fullwidth"></div>  
+      <div class="fullwidth"></div>
 
+    <!-- TOGGLE -->
     <h4>Toggle</h4>
-      <h5>fall, rise</h5>
-      <div class="button toggle-display show-toggleset-2">
-        <div class="hovereffect1"></div>
-      </div>
-    <div class="container">
-      <span class="toggle-label">Label</span>
-      <label class="switch"><input type="checkbox" />    <div></div>
-      </label>
+    <h5>fall, rise</h5>
+
+<!--
+    <div class="button toggle-display show-toggleset-2">
+      <div class="hovereffect1"></div>
     </div>
+-->
 
-    <div class="container">
-      <span class="toggle-label">Label2</span>
-      <label class="switch"><input type="checkbox" />    <div></div>
+    <input type="checkbox" id="button-toggles">
+      <label for="button-toggles">
+
+      
+        <div class="container">
+          <span class="toggle-label">Label</span>
+          <label class="switch"><input type="checkbox" />    <div></div>
+          </label>
+        </div>
+        <div class="container">
+          <span class="toggle-label">Label2</span>
+          <label class="switch"><input type="checkbox" />    <div></div>
+          </label>
+        </div>
+
+        <div class="container">
+          <span class="toggle-label">Label3</span>
+          <label class="switch"><input type="checkbox" />    <div></div>
+          </label>
+        </div>
+
+        <div class="container">
+          <span class="toggle-label">Label4</span>
+          <label class="switch"><input type="checkbox" />    <div></div>
+          </label>
+        </div>
       </label>
-    </div>
+    </input>
 
+
+
+    <!-- MODALS -->
+    <h4>Modal</h4>
+    <h5>Fade in and out - point of origin</h5>
     <div class="container">
-      <span class="toggle-label">Label3</span>
-      <label class="switch"><input type="checkbox" />    <div></div>
-      </label>
+     <a href="#popUp" id="openPopUp">Modal</a>
+
+    <aside id="popUp" class="popup">
+        <div class="popUpContainer">
+           <header>
+            <a href="#!" class="closePopUp">v</a>
+            <h2>Modal Header</h2>
+           </header>
+          <article>
+
+          </article>
+       </div>        
+       <a href="#!" class="closePopUpOutSide"></a>    
+    </aside>
     </div>
+    <h5>Multipage modals - from slide one to slide two</h5>
+    <div class="demo placeholder"></div>
 
-    <div class="container">
-      <span class="toggle-label">Label4</span>
-      <label class="switch"><input type="checkbox" />    <div></div>
-      </label>
-    </div>
-      <h4>Modal</h4>
-      <h5>Fade in and out - point of origin</h5>
-      <div class="container">
-       <a href="#popUp" id="openPopUp">Modal</a>
+    <h5>Multi-tab modals</h5>
+    <div class="demo placeholder"></div>
 
-      <!-- POP UP -->
-      <aside id="popUp" class="popup">
-          <div class="popUpContainer">
-             <header>
-              <a href="#!" class="closePopUp">v</a>
-              <h2>Modal Header</h2>
-             </header>
-            <article>
+    <!-- REDACTOR -->
+    <h4>Redactor</h4>
+    <h5>Transition to Code View</h5>
+    <div class="demo placeholder"></div>
 
-            </article>
-         </div>        
-         <a href="#!" class="closePopUpOutSide"></a>    
-      </aside>
-      </div>
-      <h5>Multipage modals - from slide one to slide two</h5>
-      <div class="demo placeholder"></div>
-      <h5>Multi-tab modals</h5>
-      <div class="demo placeholder"></div>
-      <h4>Redactor</h4>
-      <h5>Transition to Code View</h5>
-      <div class="demo placeholder"></div>
-      <h5>Confirmation</h5>
-      <div class="demo placeholder"></div>
-      <h4>Dropdown Menu</h4>
-      <div class="demo placeholder"></div>
-      <h4>Status Bar</h4>
-      <h5>Color change (draft, scheduled and published)</h5>
-      <div class="demo placeholder"></div>
-      <h4>Status Message</h4>
-      <div class="demo placeholder"></div>
+    <h5>Confirmation</h5>
+    <div class="demo placeholder"></div>
+
+    <!-- STATUS BAR -->
+    <h4>Status Bar</h4>
+    <h5>Color change (draft, scheduled and published)</h5>
+    <div class="demo placeholder"></div>
+
+    <!-- STATUS MESSAGE -->
+    <h4>Status Message</h4>
+    <div class="demo placeholder"></div>
 
     </div>
   </body>

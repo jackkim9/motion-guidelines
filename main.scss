@@ -40,7 +40,7 @@ $easing-custom-2: cubic-bezier(0.465, 0.183, 0.153, 0.946);
 }
   
 * {
-  font-family: avenir;
+  font-family: avenir, Helvetica Neue, Helvetica, arial, sans-serif;
 }
 
 body {
@@ -49,7 +49,6 @@ body {
 }
 
 header {
-
   margin-top:3.5rem;
   margin-bottom: 4rem;
 }
@@ -203,7 +202,7 @@ h5 {
   transition-timing-fuction: $easing-custom-1;
   transition-property: all;  
 
-    &.fadein {
+  &.fadein {
 
   }
 
@@ -212,16 +211,13 @@ h5 {
   }
 
   &.expand {
-
   }
 
   &.slide {
-  transition-timing-fuction: $easing-custom-2;
-
+    transition-timing-fuction: $easing-custom-2;
   }
 
   &.top {
-
   }
 
 }
@@ -424,15 +420,21 @@ $padding: 10px;
     }
     
     &:valid + label {
+      /*
+      opacity: 1;
+      top: 3px;
+      font-size: 0.5rem;
+      text-transform: uppercase;
+      font-weight: bold;*/
+    }
+    
+    &:focus + label {
+      color: $blue2;
       opacity: 1;
       top: 3px;
       font-size: 0.5rem;
       text-transform: uppercase;
       font-weight: bold;
-    }
-    
-    &:focus + label {
-      color: $blue2;
     }
   }
 }
@@ -549,15 +551,14 @@ a#openPopUp:hover{
     h2 {
       font-size: 1rem;
       font-weight: 400;
+      padding: 0.5em;
+      text-align: center;
+      color: #fff;
+      margin: 0;
     }
   }
 }
-.popup h2{
-  padding: 0.5em;
-  text-align: center;
-  color: #fff;
-  margin: 0;
-}
+
 .popup img{
   width: 100%;
   display: block;
@@ -566,7 +567,7 @@ a#openPopUp:hover{
   height: 300px;
   background-color: white;
 }
-/* The cancel button on popup dialog */
+
 .popup a.closePopUp{
   color: #fff;
   position: absolute;
@@ -590,10 +591,10 @@ a#openPopUp:hover{
 }
 .popup:target .popUpContainer{
   top: 50px;
-    -webkit-transition: top  0.2s ease;
-    -moz-transition: top 0.2s ease;
-    -o-transition: top 0.2s ease;
-    transition: top 0.2s ease;
+  -webkit-transition: top  0.2s ease;
+  -moz-transition: top 0.2s ease;
+  -o-transition: top 0.2s ease;
+  transition: top 0.2s ease;
 }
 
 @media  (max-width: 796px) {
