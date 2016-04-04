@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -124,10 +125,16 @@
         <div class="hovereffect1"></div>
       </div>
       <h4>Filter</h4>
-      <div class="filter">
-        <a class="" href="#">Filter</a>
-        <div class="hovereffect1"></div>
-      </div>
+      
+      <input type="checkbox" id="button-filter">
+        <label for="button-filter">
+          <div class="filter">
+            <a class="" href="#">Filter</a>
+            <div class="hovereffect2"></div>
+          </div>
+        </label>
+      </input>
+
       <h4>Float Label</h4>
       <h5>Input</h5>
       <div class="fullwidth">
@@ -192,7 +199,23 @@
     </div>
       <h4>Modal</h4>
       <h5>Fade in and out - point of origin</h5>
-      <div class="demo placeholder"></div>
+      <div class="container">
+       <a href="#popUp" id="openPopUp">Modal</a>
+
+      <!-- POP UP -->
+      <aside id="popUp" class="popup">
+          <div class="popUpContainer">
+             <header>
+              <a href="#!" class="closePopUp">v</a>
+              <h2>Modal Header</h2>
+             </header>
+            <article>
+
+            </article>
+         </div>        
+         <a href="#!" class="closePopUpOutSide"></a>    
+      </aside>
+      </div>
       <h5>Multipage modals - from slide one to slide two</h5>
       <div class="demo placeholder"></div>
       <h5>Multi-tab modals</h5>
@@ -213,4 +236,3 @@
     </div>
   </body>
 </html>
-
