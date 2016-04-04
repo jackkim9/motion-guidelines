@@ -11,16 +11,16 @@ $color-background: #fdfdfd;
 $ball-height: 3rem;
 
 //duration tokens
-$duration-instant: 0s;
+$duration-instant: 0;
 $duration-shorter: 70ms;
 $duration-short: 100ms;
 $duration-base: 200ms;
 $duration-long: 400ms;
-$duration-longer: 3.2s;
+$duration-longer: 2500ms;
 
 //easing tokens
 $easing-custom-1: cubic-bezier(.67, 0, 0, 1);
-$easing-custom-2: cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+$easing-custom-2: cubic-bezier(0.465, 0.183, 0.153, 0.946);
 
 
 @keyframes balls {

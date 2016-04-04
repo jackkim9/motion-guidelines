@@ -60,7 +60,7 @@ h5 {
     background: #006AD4;
     transition-property: border-radius, background; }
     .demo.duration.instant {
-      transition-duration: 0s; }
+      transition-duration: 0; }
     .demo.duration.shorter {
       transition-duration: 70ms; }
     .demo.duration.base {
@@ -68,7 +68,7 @@ h5 {
     .demo.duration.long {
       transition-duration: 400ms; }
     .demo.duration.longer {
-      transition-duration: 3.2s; }
+      transition-duration: 2500ms; }
     .demo.duration:hover {
       background: #00d400;
       border-radius: 50%; }
@@ -80,7 +80,7 @@ h5 {
   border-radius: 1.5rem;
   background-color: #006AD4;
   animation-name: balls;
-  animation-duration: 3.2s;
+  animation-duration: 2500ms;
   animation-delay: 0.5s;
   animation-iteration-count: infinite; }
   .ball.custom-easing {
@@ -99,8 +99,8 @@ h5 {
     animation-timing-function: cubic-bezier(0.67, 0, 0, 1);
     -webkit-animation-timing-function: cubic-bezier(0.67, 0, 0, 1); }
   .ball.easing-6 {
-    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+    animation-timing-function: cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-animation-timing-function: cubic-bezier(0.465, 0.183, 0.153, 0.946); }
 
 .motion-demo {
   position: relative;
@@ -114,7 +114,7 @@ h5 {
   transition-timing-fuction: cubic-bezier(0.67, 0, 0, 1);
   transition-property: all; }
   .motion-demo.slide {
-    transition-timing-fuction: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+    transition-timing-fuction: cubic-bezier(0.465, 0.183, 0.153, 0.946); }
 
 .button {
   position: relative;
