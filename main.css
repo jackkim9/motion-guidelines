@@ -1,0 +1,308 @@
+@keyframes balls {
+  0% {
+    left: 0; }
+  50% {
+    left: 20rem;
+    box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.16); }
+  100% {
+    left: 0rem; } }
+* {
+  font-family: avenir; }
+
+body {
+  background-color: #fdfdfd;
+  padding: 3rem; }
+
+header {
+  margin-top: 3.5rem;
+  margin-bottom: 4rem; }
+
+h1 {
+  margin-top: -1rem;
+  line-height: 1;
+  font-size: 4rem; }
+
+h2 {
+  font-size: 2rem;
+  line-height: 1; }
+
+h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline; }
+
+h4 {
+  font-weight: 400;
+  font-size: 1rem;
+  max-width: 40rem; }
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #006AD4;
+  font-style: italic; }
+
+.section {
+  padding-bottom: 2rem;
+  padding-top: 2rem; }
+
+.subsection {
+  padding-top: 0.1rem; }
+
+.demo {
+  width: 30rem;
+  height: 5rem;
+  background: #efefef; }
+  .demo.duration {
+    width: 7.5rem;
+    height: 7.5rem;
+    background: #006AD4;
+    transition-property: border-radius, background; }
+    .demo.duration.instant {
+      transition-duration: 0s; }
+    .demo.duration.shorter {
+      transition-duration: 70ms; }
+    .demo.duration.base {
+      transition-duration: 200ms; }
+    .demo.duration.long {
+      transition-duration: 400ms; }
+    .demo.duration.longer {
+      transition-duration: 3.2s; }
+    .demo.duration:hover {
+      background: #00d400;
+      border-radius: 50%; }
+
+.ball {
+  position: relative;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 1.5rem;
+  background-color: #006AD4;
+  animation-name: balls;
+  animation-duration: 3.2s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite; }
+  .ball.custom-easing {
+    background-color: #00D4C9; }
+  .ball.easing-0 {
+    animation-timing-function: ease; }
+  .ball.easing-1 {
+    animation-timing-function: ease-in-out; }
+  .ball.easing-2 {
+    animation-timing-function: ease-in; }
+  .ball.easing-3 {
+    animation-timing-function: ease-out; }
+  .ball.easing-4 {
+    animation-timing-function: linear; }
+  .ball.easing-5 {
+    animation-timing-function: cubic-bezier(0.67, 0, 0, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.67, 0, 0, 1); }
+  .ball.easing-6 {
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.motion-demo {
+  position: relative;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 3rem;
+  background-color: #006AD4;
+  margin-bottom: 3rem;
+  display: block;
+  transition-duration: 200ms;
+  transition-timing-fuction: cubic-bezier(0.67, 0, 0, 1);
+  transition-property: all; }
+  .motion-demo.slide {
+    transition-timing-fuction: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.button {
+  position: relative;
+  max-width: 290px;
+  height: 60px;
+  background-color: #dedede;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+  .button.toggle-display {
+    display: inline-block;
+    background-color: #555555;
+    margin-right: 1rem;
+    width: 5rem;
+    height: 2rem; }
+  .button:hover {
+    color: #ffffff; }
+    .button:hover a {
+      color: #ffffff;
+      z-index: 1000; }
+    .button:hover .hovereffect1 {
+      height: 60px; }
+  .button:active {
+    background: #006AD4;
+    opacity: .75;
+    transform: scale(0.98);
+    transition: all 200ms ease; }
+  .button a {
+    position: relative;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    color: #888888;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 60px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
+
+.filter {
+  position: relative;
+  max-width: 290px;
+  height: 60px;
+  background-color: #dedede;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+  .filter:hover {
+    color: #ffffff; }
+    .filter:hover a {
+      color: #ffffff;
+      z-index: 1000; }
+    .filter:hover .hovereffect1 {
+      height: 60px; }
+  .filter:active {
+    background: #006AD4;
+    opacity: .75;
+    transform: scale(0.98);
+    transition: all 200ms ease; }
+  .filter a {
+    position: relative;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    color: #888888;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 60px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
+
+.hovereffect1 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 0px;
+  margin: 0 auto;
+  padding: 0px;
+  background-color: #74dcff;
+  -webkit-transition: 0.2s cubic-bezier(0.67, 0, 0, 1);
+  -moz-transition: 0.2s cubic-bezier(0.67, 0, 0, 1);
+  -o-transition: 0.2s cubic-bezier(0.67, 0, 0, 1);
+  -ms-transition: 0.2s cubic-bezier(0.67, 0, 0, 1);
+  transition: 0.2s cubic-bezier(0.67, 0, 0, 1); }
+
+input[type='checkbox'] {
+  display: none; }
+
+#button-fadein:checked + label .fadein {
+  opacity: 0;
+  webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  box-shadow: none; }
+
+#button-ghosted:checked + label .ghosted {
+  opacity: 0.5; }
+
+#button-expand:checked + label .expand {
+  webkit-transform: scale(2);
+  transform: scale(2); }
+
+#button-slide:checked + label .slide {
+  margin-left: 15rem; }
+
+.float-label .control {
+  float: left;
+  position: relative;
+  width: 25rem;
+  border: 1px solid #ddd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 25px; }
+.float-label input, .float-label textarea {
+  display: block;
+  padding-left: 0.5rem;
+  width: 24rem;
+  border: 0;
+  outline: 0;
+  resize: none;
+  font-size: 1rem;
+  bottom: 0;
+  padding-top: 0.5rem; }
+  .float-label input + label, .float-label textarea + label {
+    position: absolute;
+    left: 0.5rem;
+    top: 14px;
+    padding-top: 0.1rem;
+    transition: top 200ms cubic-bezier(0.67, 0, 0, 1), opacity 200ms cubic-bezier(0.67, 0, 0, 1);
+    opacity: 0;
+    color: #999;
+    font-size: 1rem; }
+  .float-label input:valid + label, .float-label textarea:valid + label {
+    opacity: 1;
+    top: 3px;
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bold; }
+  .float-label input:focus + label, .float-label textarea:focus + label {
+    color: #74dcff; }
+
+.fullwidth {
+  display: block;
+  position: relative;
+  width: 100%; }
+
+.container {
+  position: relative;
+  height: 40px;
+  width: 12rem; }
+
+span {
+  position: absolute;
+  margin-top: 0.3rem; }
+
+span .toggle-label {
+  position: relative; }
+
+.switch input {
+  position: absolute;
+  opacity: 0; }
+
+.switch {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  font-size: 20px;
+  height: 1em;
+  width: 2em;
+  background: #cdcdcd;
+  border-radius: 1em;
+  border: 0.185rem solid #cdcdcd; }
+
+.switch div {
+  height: 1em;
+  width: 1em;
+  border-radius: 1em;
+  background: #FFF;
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out; }
+
+input:checked + div {
+  -webkit-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0); }
+
+/*# sourceMappingURL=main.css.map */

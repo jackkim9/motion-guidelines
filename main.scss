@@ -1,0 +1,471 @@
+//colors
+$blue: #006AD4;
+$blue2: #74dcff;
+$cyan: #00D4C9;
+$green: #00d400;
+$gray-medium: #555555;
+$color-placeholder-text: #fefefe;
+$color-background: #fdfdfd;
+
+//dimensions
+$ball-height: 3rem;
+
+//duration tokens
+$duration-instant: 0s;
+$duration-shorter: 70ms;
+$duration-short: 100ms;
+$duration-base: 200ms;
+$duration-long: 400ms;
+$duration-longer: 3.2s;
+
+//easing tokens
+$easing-custom-1: cubic-bezier(.67, 0, 0, 1);
+$easing-custom-2: cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+
+
+@keyframes balls {
+  0% {
+    left:0;   
+  }
+  
+  50% {
+    left:20rem;
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,.16);
+  }
+
+  100% {
+    left:0rem;
+  }
+}
+  
+* {
+  font-family: avenir;
+}
+
+body {
+  background-color: $color-background;
+  padding: 3rem;
+}
+
+header {
+
+  margin-top:3.5rem;
+  margin-bottom: 4rem;
+}
+
+h1 {
+  margin-top: -1rem;
+  line-height: 1;
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 1rem;
+  max-width: 40rem;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: $blue;
+  font-style: italic;
+}
+
+.section {
+   padding-bottom: 2rem;
+   padding-top: 2rem;
+}
+
+.subsection {
+  padding-top: 0.1rem;
+}
+
+.demo {
+  width: 30rem;
+  height: 5rem;
+  background: #efefef;
+
+  &.duration {
+    width: 7.5rem;
+    height: 7.5rem;
+    background: $blue;
+    transition-property: border-radius, background;
+    
+    &.instant {
+       transition-duration: $duration-instant;
+    }
+    
+    &.shorter {
+       transition-duration: $duration-shorter;      
+    }
+    
+    &.base {
+       transition-duration: $duration-base;       
+    }
+    
+    &.long {
+       transition-duration: $duration-long;            
+    }
+    
+    &.longer {
+        transition-duration: $duration-longer;      
+    }
+    
+    &:hover {
+      background: $green;
+      border-radius: 50%;
+    }
+  }
+  
+  &.easing-demo {
+    
+  }
+}
+
+.ball {
+  position: relative;
+  height: $ball-height;
+  width: $ball-height;
+  border-radius: $ball-height/2;
+  background-color: $blue;
+  
+  animation-name: balls;
+  animation-duration: $duration-longer;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+  
+  &.custom-easing {
+    background-color: $cyan;
+  }
+  
+  &.easing-0 {
+    animation-timing-function: ease; 
+  }
+  
+  &.easing-1 {
+    animation-timing-function: ease-in-out;
+  }
+  
+  &.easing-2 {
+    animation-timing-function: ease-in;    
+  }
+  
+  &.easing-3 {
+    animation-timing-function: ease-out;    
+  }
+  
+  &.easing-4 {
+    animation-timing-function: linear;    
+  }
+  
+  &.easing-5 {
+    animation-timing-function: $easing-custom-1;
+    -webkit-animation-timing-function: $easing-custom-1;
+  }
+  
+  &.easing-6 {
+    animation-timing-function: $easing-custom-2;   
+    -webkit-animation-timing-function: $easing-custom-2;
+  }
+  
+  &:hover {
+
+  }
+}
+
+.motion-demo {
+  position: relative;
+  height: $ball-height*2;
+  width: $ball-height*2;
+  border-radius: $ball-height;
+  background-color: $blue;
+  margin-bottom: 3rem;
+  display: block;
+  transition-duration: $duration-base;
+  transition-timing-fuction: $easing-custom-1;
+  transition-property: all;  
+
+    &.fadein {
+
+  }
+
+  &.ghosted {
+
+  }
+
+  &.expand {
+
+  }
+
+  &.slide {
+  transition-timing-fuction: $easing-custom-2;
+
+  }
+
+  &.top {
+
+  }
+
+}
+
+
+//
+.button {  
+    position:relative;
+    max-width:290px;
+    height:60px;
+    background-color: #dedede;
+    text-align:center;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+   
+  &.toggle-display{
+    display: inline-block;
+    background-color: $gray-medium;
+    margin-right: 1rem;
+    width: 5rem;
+    height: 2rem;
+  }
+    
+    &:hover {
+      color: #ffffff;
+      
+      a {
+        color: #ffffff;
+        z-index: 1000;     
+      }
+
+      .hovereffect1 {
+        height: 60px;
+      }
+    }   
+
+    &:active {
+      background: $blue;
+      opacity: .75;
+      transform: scale(.98);
+      transition: all $duration-base ease;
+    }
+
+    a {
+      position: relative;
+      padding: 0px;
+      text-align: center;
+      text-decoration: none;
+      color: #888888;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 60px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; 
+    }
+}
+
+.filter {  
+    position:relative;
+    max-width:290px;
+    height:60px;
+    background-color: #dedede;
+    text-align:center;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+   
+    &:hover {
+      color: #ffffff;
+      
+      a {
+        color: #ffffff;
+        z-index: 1000;     
+      }
+
+      .hovereffect1 {
+        height: 60px;
+      }
+    }   
+
+    &:active {
+      background: $blue;
+      opacity: .75;
+      transform: scale(.98);
+      transition: all $duration-base ease;
+    }
+
+    a {
+      position: relative;
+      padding: 0px;
+      text-align: center;
+      text-decoration: none;
+      color: #888888;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 60px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; 
+    }
+}
+.hovereffect1 {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 0px;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: $blue2;
+    -webkit-transition: .2s $easing-custom-1;
+    -moz-transition: .2s $easing-custom-1;
+    -o-transition: .2s $easing-custom-1;
+    -ms-transition: .2s $easing-custom-1;
+    transition: .2s $easing-custom-1;
+}
+
+
+input[type='checkbox'] {
+  display: none;
+}
+
+#button-fadein:checked + label .fadein {
+  opacity: 0;
+  webkit-transform: scale(.8);
+  transform: scale(.8);
+  box-shadow: none;
+}
+
+#button-ghosted:checked + label .ghosted {
+  opacity: 0.5;
+}
+
+#button-expand:checked + label .expand {
+  webkit-transform: scale(2);
+  transform: scale(2);
+}
+
+#button-slide:checked + label .slide {
+  margin-left: 15rem;
+
+}
+
+
+//Float Label
+$border: 1px solid #333;
+$padding: 10px;
+
+
+.float-label {
+  .control {
+    float: left;
+    position: relative;
+    width: 25rem;
+    border: 1px solid #ddd;
+    padding-top: $padding;
+    padding-bottom: $padding;
+    height: 25px;
+  }
+  
+  input, textarea {
+    display: block;
+    padding-left: 0.5rem;
+    width: 24rem;
+    border: 0;
+    outline: 0;
+    resize: none;
+    font-size: 1rem;
+    bottom: 0;
+    padding-top: 0.5rem;
+    
+    & + label {
+      position: absolute;
+      left: 0.5rem;
+      top: 14px;
+      padding-top: 0.1rem;
+      transition: top $duration-base $easing-custom-1, opacity $duration-base $easing-custom-1;
+      opacity: 0;
+      color: #999;
+      font-size: 1rem;
+    }
+    
+    &:valid + label {
+      opacity: 1;
+      top: 3px;
+      font-size: 0.5rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    
+    &:focus + label {
+      color: $blue2;
+    }
+  }
+}
+
+.fullwidth {
+  display:block;
+  position:relative;
+  width: 100%;
+}
+
+//Toggles
+
+.container {
+  position: relative;
+  height: 40px;
+  width: 12rem;
+}
+
+span {
+  position: absolute;
+  margin-top: 0.3rem;
+}
+span .toggle-label {
+  position: relative;
+  
+}
+.switch input {
+  position: absolute;
+  opacity: 0;
+}
+
+.switch {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  font-size: 20px; 
+  height: 1em;
+  width: 2em;
+  background: #cdcdcd;
+  border-radius: 1em;
+  border: 0.185rem solid #cdcdcd;
+  
+}
+
+.switch div {
+  height: 1em;
+  width: 1em;
+  border-radius: 1em;
+  background: #FFF;
+  -webkit-transition: all $duration-short ease-in-out;
+     -moz-transition: all $duration-short ease-in-out;
+          transition: all $duration-short ease-in-out;
+}
+
+input:checked + div {
+  -webkit-transform: translate3d(100%, 0, 0);
+     -moz-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+}
