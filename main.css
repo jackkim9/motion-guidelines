@@ -129,6 +129,7 @@ h6 {
     transition-timing-fuction: cubic-bezier(0.465, 0.183, 0.153, 0.946); }
 
 .button {
+  cursor: pointer;
   position: relative;
   max-width: 290px;
   height: 60px;
@@ -169,6 +170,7 @@ h6 {
     transition: all 0.3s; }
 
 .filter {
+  cursor: pointer;
   position: relative;
   max-width: 290px;
   height: 60px;
@@ -254,6 +256,7 @@ input[type='checkbox'] {
 .float-label .control {
   float: left;
   position: relative;
+  background: #fff;
   width: 25rem;
   border: 1px solid #ddd;
   padding-top: 10px;
@@ -392,10 +395,13 @@ a#openPopUp:hover {
     -o-transition: top 70ms ease;
     transition: top 70ms ease; }
     .popup .popUpContainer header h2 {
+      position: absolute;
       text-transform: uppercase;
       font-size: 1rem;
       font-weight: 600;
-      transform: translateY(100%);
+      left: 50%;
+      top: 1.25rem;
+      transform: translateX(-50%) translateY(-50%);
       text-align: center;
       color: #fff;
       margin: 0; }
@@ -451,5 +457,73 @@ a#openPopUp:hover {
     -moz-transition: top 0.2s ease;
     -o-transition: top 0.2s ease;
     transition: top 0.2s ease; } }
+.messagebar {
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  z-index: 9999999;
+  background: rgba(0, 0, 0, 0.75);
+  width: 100vw;
+  opacity: 0;
+  -webkit-transition: opacity 0s ease;
+  -moz-transition: opacity 0s ease;
+  -o-transition: opacity 0s ease;
+  transition: opacity 0s ease; }
+
+.messagebar .popUpContainer {
+  width: 100%;
+  max-width: 100%;
+  position: fixed;
+  background-color: #ffffff;
+  border-radius: 2px;
+  z-index: 9999999; }
+  .messagebar .popUpContainer header {
+    background: black;
+    margin: 0;
+    min-height: 5rem; }
+    .messagebar .popUpContainer header h2 {
+      position: absolute;
+      font-size: 1rem;
+      font-weight: 600;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      text-align: center;
+      color: #fff;
+      margin: 0; }
+
+.messagebar img {
+  width: 100%;
+  display: block; }
+
+.messagebar article {
+  height: 300px;
+  background-color: white; }
+
+.messagebar a.closePopUp {
+  color: #fff;
+  position: absolute;
+  top: 0.2em;
+  right: 0.375em;
+  margin: 0;
+  padding: 5px;
+  text-decoration: none; }
+
+.messagebar:target {
+  opacity: 1;
+  top: 0; }
+
+@media (max-width: 796px) {
+  .messagebar .popUpContainer {
+    width: 100%;
+    max-width: none;
+    left: 5%;
+    margin-left: 0; }
+
+  .messagebar ul {
+    padding: 0 1em 0 1em; }
+
+  .messagebar:target .popUpContainer {
+    top: 25px; } }
 
 /*# sourceMappingURL=main.css.map */
