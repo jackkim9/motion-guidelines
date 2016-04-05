@@ -24,10 +24,10 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  line-height: 1; }
+  line-height: 0.8; }
 
 h3 {
-  font-size: 0.85rem;
+  font-size: 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: underline; }
@@ -42,6 +42,10 @@ h5 {
   font-weight: 400;
   color: #006AD4;
   font-style: italic; }
+
+h6 {
+  font-size: 1.25rem;
+  font-weight: 100; }
 
 .section {
   padding-bottom: 2rem;
