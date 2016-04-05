@@ -10,7 +10,7 @@
   font-family: avenir, Helvetica Neue, Helvetica, arial, sans-serif; }
 
 body {
-  background-color: #fdfdfd;
+  background-color: #fafafa;
   padding: 3rem; }
 
 header {
@@ -18,7 +18,7 @@ header {
   margin-bottom: 4rem; }
 
 h1 {
-  margin-top: -1rem;
+  margin-top: -2rem;
   line-height: 1;
   font-size: 4rem; }
 
@@ -40,7 +40,7 @@ h4 {
 h5 {
   font-size: 1rem;
   font-weight: 400;
-  color: #006AD4;
+  color: #FF6700;
   font-style: italic; }
 
 h6 {
@@ -61,7 +61,7 @@ h6 {
   .demo.duration {
     width: 7.5rem;
     height: 7.5rem;
-    background: #006AD4;
+    background: #FF6700;
     transition-property: border-radius, background; }
     .demo.duration.zero {
       transition-duration: 0; }
@@ -84,7 +84,7 @@ h6 {
   height: 3rem;
   width: 3rem;
   border-radius: 1.5rem;
-  background-color: #006AD4;
+  background-color: #FF6700;
   animation-name: balls;
   animation-duration: 2500ms;
   animation-delay: 0.5s;
@@ -113,7 +113,7 @@ h6 {
   height: 6rem;
   width: 6rem;
   border-radius: 3rem;
-  background-color: #006AD4;
+  background-color: #FF6700;
   margin-bottom: 3rem;
   display: block;
   transition-duration: 200ms;
@@ -178,7 +178,6 @@ h6 {
   .filter:active {
     background: #74dcff;
     opacity: .75;
-    transform: scale(0.98);
     transition: all 200ms ease; }
   .filter a {
     position: relative;

@@ -1,11 +1,11 @@
 //colors
-$blue: #006AD4;
+$blue: #FF6700;
 $blue2: #74dcff;
 $cyan: #00D4C9;
 $green: #00d400;
 $gray-medium: #555555;
 $color-placeholder-text: #fefefe;
-$color-background: #fdfdfd;
+$color-background: #fafafa;
 
 //dimensions
 $ball-height: 3rem;
@@ -54,7 +54,7 @@ header {
 }
 
 h1 {
-  margin-top: -1rem;
+  margin-top: -2rem;
   line-height: 1;
   font-size: 4rem;
 }
@@ -307,7 +307,7 @@ h6 {
     &:active {
       background: $blue2;
       opacity: .75;
-      transform: scale(.98);
+      //transform: scale(.98);
       transition: all $duration-base ease;
     }
 
