@@ -24,10 +24,10 @@
       <h4>Explanation and some comments about the science and philosophy behind duration goes here</h4>
       <div class="subsection">
         <h4>Sass Duration Tokens</h5>
-        <h5>$duration-<b>instant</b>: 0</h5>
+        <h5>0</h5>
+        <div class="demo duration zero"></div>
+        <h5>$duration-<b>instant</b>: 70ms</h5>
         <div class="demo duration instant"></div>
-        <h5>$duration-<b>shorter</b>: 70ms</h5>
-        <div class="demo duration shorter"></div>
         <h5>$duration-<b>short</b>: 100ms</h5>
         <div class="demo duration short"></div>
         <h5>$duration-<b>base</b>: 200ms</h5>
@@ -45,6 +45,8 @@
     <div class="section easing">
       <h3>Easing</h3>
       <h4>Explanation and some comments about the science and philosophy behind easing goes here</h4>
+      <h6>"<b>Decelerate</b>human interactions"</h6>
+      <h6>"<b>Accelerate</b>system initiated interactions"</h6>
       <div class="subsection">
         <h4>Sass Easing Tokens</h5>
         <h5>ease</h5>
@@ -75,14 +77,14 @@
       <h3>Motion Types</h3>
       <h4>Explanation and some comments about the philosophy behind motion types goes here</h4>  
       <h4>Fade In and Out</h4>
-      <h5>What it is in CSS</h5>
+      <h5>opacity:0; transform: scale(.8)</h5>
       <input type="checkbox" id="button-fadein">
         <label for="button-fadein">
           <div class="motion-demo fadein"></div>
         </label>
       </input>
       <h4>Ghosted (Un-editable Element)</h4>
-      <h5>What it is in CSS</h5>
+      <h5>opacity: .5;</h5>
       <input type="checkbox" id="button-ghosted">
         <label for="button-ghosted">
           <div class="motion-demo ghosted"></div>
@@ -90,14 +92,13 @@
       </input>
 
       <h4>Expand and Contract</h4>
-      <h5>What it is in CSS</h5>
+      <h5>transform: scale(2)</h5>
       <input type="checkbox" id="button-expand">
         <label for="button-expand">
           <div class="motion-demo expand"></div>
         </label>
       </input>
       <h4>Slide</h4>
-      <h5>What it is in CSS</h5>
       <input type="checkbox" id="button-slide">
         <label for="button-slide">
           <div class="motion-demo slide"></div>
