@@ -11,7 +11,8 @@ $color-background: #fdfdfd;
 $ball-height: 3rem;
 
 //duration tokens
-$duration-instant: 70ms;
+$duration-instant: 0;
+$duration-shorter: 70ms;
 $duration-short: 100ms;
 $duration-base: 200ms;
 $duration-long: 400ms;
@@ -22,7 +23,7 @@ $duration-message: 2500ms;
 $easing-custom-1: cubic-bezier(.67, 0, 0, 1);
 $easing-custom-2: cubic-bezier(0.465, 0.183, 0.153, 0.946);
 
-//keyframe animations
+
 @keyframes balls {
   0% {
     left:0;   
@@ -83,10 +84,6 @@ h5 {
   font-style: italic;
 }
 
-h6 {
-  font-size: 1rem;
-  font-weight: bold;
-}
 .section {
    padding-bottom: 2rem;
    padding-top: 2rem;
@@ -366,7 +363,7 @@ input[type='checkbox'] {
 }
 
 #button-ghosted:checked + label .ghosted {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 #button-expand:checked + label .expand {

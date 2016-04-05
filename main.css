@@ -1,69 +1,437 @@
-/*
-Error: Undefined variable: "$duration-shorter".
-        on line 349 of main.scss
+@keyframes balls {
+  0% {
+    left: 0; }
+  50% {
+    left: 20rem;
+    box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.16); }
+  100% {
+    left: 0rem; } }
+* {
+  font-family: avenir, Helvetica Neue, Helvetica, arial, sans-serif; }
 
-344:     top: 0;
-345:     height: 0px;
-346:     margin: 0 auto;
-347:     padding: 0px;
-348:     background-color: $blue2;
-349:     -webkit-transition: $duration-shorter $easing-custom-1;
-350:     -moz-transition: $duration-shorter $easing-custom-1;
-351:     -o-transition: $duration-shorter $easing-custom-1;
-352:     -ms-transition: $duration-shorter $easing-custom-1;
-353:     transition: $duration-shorter $easing-custom-1;
-354: }
+body {
+  background-color: #fdfdfd;
+  padding: 3rem; }
 
-Backtrace:
-main.scss:349
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/list_literal.rb:63:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/list_literal.rb:63:in `_perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:391:in `run'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
-/usr/bin/sass:23:in `load'
-/usr/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$duration-shorter\".\A         on line 349 of main.scss\A \A 344:     top: 0;\A 345:     height: 0px;\A 346:     margin: 0 auto;\A 347:     padding: 0px;\A 348:     background-color: $blue2;\A 349:     -webkit-transition: $duration-shorter $easing-custom-1;\A 350:     -moz-transition: $duration-shorter $easing-custom-1;\A 351:     -o-transition: $duration-shorter $easing-custom-1;\A 352:     -ms-transition: $duration-shorter $easing-custom-1;\A 353:     transition: $duration-shorter $easing-custom-1;\A 354: }"; }
+header {
+  margin-top: 3.5rem;
+  margin-bottom: 4rem; }
+
+h1 {
+  margin-top: -1rem;
+  line-height: 1;
+  font-size: 4rem; }
+
+h2 {
+  font-size: 2rem;
+  line-height: 1; }
+
+h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline; }
+
+h4 {
+  font-weight: 400;
+  font-size: 1rem;
+  max-width: 40rem; }
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #006AD4;
+  font-style: italic; }
+
+.section {
+  padding-bottom: 2rem;
+  padding-top: 2rem; }
+
+.subsection {
+  padding-top: 0.1rem; }
+
+.demo {
+  width: 30rem;
+  height: 5rem;
+  background: #efefef; }
+  .demo.duration {
+    width: 7.5rem;
+    height: 7.5rem;
+    background: #006AD4;
+    transition-property: border-radius, background; }
+    .demo.duration.zero {
+      transition-duration: 0; }
+    .demo.duration.instant {
+      transition-duration: 0; }
+    .demo.duration.base {
+      transition-duration: 200ms; }
+    .demo.duration.long {
+      transition-duration: 400ms; }
+    .demo.duration.longer {
+      transition-duration: 700ms; }
+    .demo.duration.message {
+      transition-duration: 2500ms; }
+    .demo.duration:hover {
+      background: #00d400;
+      border-radius: 50%; }
+
+.ball {
+  position: relative;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 1.5rem;
+  background-color: #006AD4;
+  animation-name: balls;
+  animation-duration: 2500ms;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite; }
+  .ball.custom-easing {
+    background-color: #00D4C9; }
+  .ball.easing-0 {
+    animation-timing-function: ease; }
+  .ball.easing-1 {
+    animation-timing-function: ease-in-out; }
+  .ball.easing-2 {
+    animation-timing-function: ease-in; }
+  .ball.easing-3 {
+    animation-timing-function: ease-out; }
+  .ball.easing-4 {
+    animation-timing-function: linear; }
+  .ball.easing-5 {
+    animation-timing-function: cubic-bezier(0.67, 0, 0, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.67, 0, 0, 1); }
+  .ball.easing-6 {
+    animation-timing-function: cubic-bezier(0.465, 0.183, 0.153, 0.946);
+    -webkit-animation-timing-function: cubic-bezier(0.465, 0.183, 0.153, 0.946); }
+
+.motion-demo {
+  position: relative;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 3rem;
+  background-color: #006AD4;
+  margin-bottom: 3rem;
+  display: block;
+  transition-duration: 200ms;
+  transition-timing-fuction: cubic-bezier(0.67, 0, 0, 1);
+  transition-property: all; }
+  .motion-demo.slide {
+    transition-timing-fuction: cubic-bezier(0.465, 0.183, 0.153, 0.946); }
+
+.button {
+  position: relative;
+  max-width: 290px;
+  height: 60px;
+  background-color: #dedede;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+  .button.toggle-display {
+    display: inline-block;
+    background-color: #555555;
+    margin-right: 1rem;
+    width: 5rem;
+    height: 2rem; }
+  .button:hover {
+    color: #ffffff; }
+    .button:hover a {
+      color: #ffffff;
+      z-index: 1000; }
+    .button:hover .hovereffect1 {
+      height: 60px; }
+  .button:active {
+    background: #74dcff;
+    opacity: .75;
+    transform: scale(0.98);
+    transition: all 200ms ease; }
+  .button a {
+    position: relative;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    color: #888888;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 60px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
+
+.filter {
+  position: relative;
+  max-width: 290px;
+  height: 60px;
+  background-color: #dedede;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+  .filter:hover a {
+    z-index: 1000; }
+  .filter:hover .hovereffect2 {
+    height: 60px; }
+  .filter:active {
+    background: #74dcff;
+    opacity: .75;
+    transform: scale(0.98);
+    transition: all 200ms ease; }
+  .filter a {
+    position: relative;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    color: #888888;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 60px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
+
+.hovereffect1 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 0px;
+  margin: 0 auto;
+  padding: 0px;
+  background-color: #74dcff;
+  -webkit-transition: 0.2s cubic-bezier(0.67, 0, 0, 1);
+  -moz-transition: 0.2s cubic-bezier(0.67, 0, 0, 1);
+  -o-transition: 0.2s cubic-bezier(0.67, 0, 0, 1);
+  -ms-transition: 0.2s cubic-bezier(0.67, 0, 0, 1);
+  transition: 0.2s cubic-bezier(0.67, 0, 0, 1); }
+
+.hovereffect2 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 0px;
+  margin: 0 auto;
+  padding: 0px;
+  background-color: #74dcff;
+  -webkit-transition: 70ms cubic-bezier(0.67, 0, 0, 1);
+  -moz-transition: 70ms cubic-bezier(0.67, 0, 0, 1);
+  -o-transition: 70ms cubic-bezier(0.67, 0, 0, 1);
+  -ms-transition: 70ms cubic-bezier(0.67, 0, 0, 1);
+  transition: 70ms cubic-bezier(0.67, 0, 0, 1); }
+
+input[type='checkbox'] {
+  display: none; }
+
+#button-fadein:checked + label .fadein {
+  opacity: 0;
+  webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  box-shadow: none; }
+
+#button-ghosted:checked + label .ghosted {
+  opacity: 0.5; }
+
+#button-expand:checked + label .expand {
+  webkit-transform: scale(2);
+  transform: scale(2); }
+
+#button-slide:checked + label .slide {
+  margin-left: 15rem; }
+
+#button-filter:checked + label .filter {
+  background: #74dcff; }
+
+.float-label .control {
+  float: left;
+  position: relative;
+  width: 25rem;
+  border: 1px solid #ddd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 25px; }
+.float-label input, .float-label textarea {
+  display: block;
+  padding-left: 0.5rem;
+  width: 24rem;
+  border: 0;
+  outline: 0;
+  resize: none;
+  font-size: 1rem;
+  bottom: 0;
+  padding-top: 0.5rem; }
+  .float-label input + label, .float-label textarea + label {
+    position: absolute;
+    left: 0.5rem;
+    top: 14px;
+    padding-top: 0.1rem;
+    transition: top 200ms cubic-bezier(0.67, 0, 0, 1), opacity 200ms cubic-bezier(0.67, 0, 0, 1);
+    opacity: 0;
+    color: #999;
+    font-size: 1rem; }
+  .float-label input:valid + label, .float-label textarea:valid + label {
+    /*
+    opacity: 1;
+    top: 3px;
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bold;*/ }
+  .float-label input:focus + label, .float-label textarea:focus + label {
+    color: #74dcff;
+    opacity: 1;
+    top: 3px;
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+.fullwidth {
+  display: block;
+  position: relative;
+  width: 100%; }
+
+.container {
+  position: relative;
+  height: 40px;
+  width: 12rem; }
+
+span {
+  position: absolute;
+  margin-top: 0.3rem; }
+
+span .toggle-label {
+  position: relative; }
+
+.switch input {
+  position: absolute;
+  opacity: 0; }
+
+.switch {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  font-size: 20px;
+  height: 1em;
+  width: 2em;
+  background: #cdcdcd;
+  border-radius: 1em;
+  border: 0.185rem solid #cdcdcd; }
+
+.switch div {
+  height: 1em;
+  width: 1em;
+  border-radius: 1em;
+  background: #FFF;
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out; }
+
+input:checked + div {
+  -webkit-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0); }
+
+#openPopUp {
+  text-align: center;
+  background-color: #555555;
+  padding: 15px 15px;
+  color: #ffffff;
+  border-radius: 3.5px;
+  text-decoration: none;
+  font-weight: 100;
+  transition: background-color 0.15s linear;
+  -webkit-transition: background-color 0.15s linear;
+  -moz-transition: background-color 0.25s linear;
+  -o-transition: background-color 0.25s linear; }
+
+a#openPopUp:hover {
+  cursor: pointer; }
+
+.popup {
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  z-index: 9999999;
+  background: rgba(0, 0, 0, 0.75);
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  -webkit-transition: opacity  0.35s ease;
+  -moz-transition: opacity 0.35s ease;
+  -o-transition: opacity 0.35s ease;
+  transition: opacity 0.35s ease; }
+
+.popup .popUpContainer {
+  width: 100%;
+  max-width: 500px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transition: top  0.35s ease;
+  -moz-transition: top 0.35s ease;
+  -o-transition: top 0.35s ease;
+  transition: top 0.35s ease;
+  margin-left: -250px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  z-index: 9999999; }
+  .popup .popUpContainer header {
+    background: black;
+    margin: 0; }
+    .popup .popUpContainer header h2 {
+      font-size: 1rem;
+      font-weight: 400;
+      padding: 0.5em;
+      text-align: center;
+      color: #fff;
+      margin: 0; }
+
+.popup img {
+  width: 100%;
+  display: block; }
+
+.popup article {
+  height: 300px;
+  background-color: white; }
+
+.popup a.closePopUp {
+  color: #fff;
+  position: absolute;
+  top: 0.2em;
+  right: 0.375em;
+  margin: 0;
+  padding: 5px;
+  text-decoration: none; }
+
+.popup:target {
+  opacity: 1;
+  top: 0; }
+
+.popup .closePopUpOutSide {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999991; }
+
+.popup:target .popUpContainer {
+  top: 50px;
+  -webkit-transition: top  0.2s ease;
+  -moz-transition: top 0.2s ease;
+  -o-transition: top 0.2s ease;
+  transition: top 0.2s ease; }
+
+@media (max-width: 796px) {
+  .popup .popUpContainer {
+    width: 100%;
+    max-width: none;
+    left: 5%;
+    margin-left: 0; }
+
+  .popup ul {
+    padding: 0 1em 0 1em; }
+
+  .popup:target .popUpContainer {
+    top: 25px;
+    -webkit-transition: top  0.2s ease;
+    -moz-transition: top 0.2s ease;
+    -o-transition: top 0.2s ease;
+    transition: top 0.2s ease; } }
+
+/*# sourceMappingURL=main.css.map */
