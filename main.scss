@@ -83,6 +83,10 @@ h5 {
   font-style: italic;
 }
 
+h6 {
+  font-size: 1rem;
+  font-weight: bold;
+}
 .section {
    padding-bottom: 2rem;
    padding-top: 2rem;
@@ -362,7 +366,7 @@ input[type='checkbox'] {
 }
 
 #button-ghosted:checked + label .ghosted {
-  opacity: 0.5;
+  opacity: .5;
 }
 
 #button-expand:checked + label .expand {
