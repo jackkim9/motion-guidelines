@@ -2,10 +2,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>Motion Guidelines</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Motion Guidelines</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
   </head>
-
   <body>
     <!-- HEADER -->
     <header>
@@ -15,19 +14,19 @@
 
     <div class="section introduction">
       <h3>Introduction</h3>
-      <h4>Cohesive rhythm of the animation and motion helps the user to....</h4>
+      <h4>Motion and animation adds an extra dimension to digital design by adding physicality to otherwise 2-dimensional UI elements. Cohesive rhythm of motion and animation makes digital touch-points feel as sophisticated and delightful as the ones in the real world.</h4>
     </div>
 
     <!-- DURATION -->
     <div class="section duration">
       <h3>Duration</h3>
-      <h4>Explanation and some comments about the science and philosophy behind duration goes here</h4>
+      <h4>Duration defines how fast an element in moving in the user interface. In the physical world, speed of an object is defined by weight and friction. Heavier objects takeas longer time to move around. Similarly, in the digial interface, large movements should take longer to move. Objects that convey large amount of information such as an error message should also transition slowly to give sufficient amount of time for the users to digest the information throughly.</h4>
       <div class="subsection">
-        <h4>Sass Duration Tokens</h5>
+        <h6>Duration Examples</h6>
         <h5>0</h5>
-        <div class="demo duration zero"></div>
-        <h5>$duration-<b>instant</b>: 70ms</h5>
         <div class="demo duration instant"></div>
+        <h5>$duration-<b>shorter</b>: 70ms</h5>
+        <div class="demo duration shorter"></div>
         <h5>$duration-<b>short</b>: 100ms</h5>
         <div class="demo duration short"></div>
         <h5>$duration-<b>base</b>: 200ms</h5>
@@ -44,13 +43,13 @@
     <!-- EASING -->
     <div class="section easing">
       <h3>Easing</h3>
-      <h4>Explanation and some comments about the science and philosophy behind easing goes here</h4>
-      <!--
+      <h4>Easing defines how an object accelerates over time.</h4>
+<!--
       <h6>"<b>Decelerate</b> human interactions"</h6>
       <h6>"<b>Accelerate</b> system initiated interactions"</h6>
-      -->
+-->
       <div class="subsection">
-        <h4>Sass Easing Tokens</h5>
+        <h6>Easing Examples</h6>
         <h5>ease</h5>
         <div class="ball easing-0"></div>
         <h5>ease-in-out</h5>
@@ -79,7 +78,7 @@
       <h3>Motion Types</h3>
       <h4>Explanation and some comments about the philosophy behind motion types goes here</h4>  
 
-      <h5><b>Fade In and Out</b></h5>
+      <h4>Fade In and Out</h4>
       <h5>opacity:0; transform: scale(.8)</h5>
       <input type="checkbox" id="button-fadein">
         <label for="button-fadein">
@@ -87,7 +86,7 @@
         </label>
       </input>
 
-      <h5><b>Ghosted (Un-editable Element)</b></h5>
+      <h4>Ghosted (Un-editable Element)</h4>
       <h5>opacity: .5;</h5>
       <input type="checkbox" id="button-ghosted">
         <label for="button-ghosted">
@@ -95,7 +94,7 @@
         </label>
       </input>
 
-      <h5><b>Expand and Contract</b></h5>
+      <h4>Expand and Contract</h4>
       <h5>transform: scale(2)</h5>
       <input type="checkbox" id="button-expand">
         <label for="button-expand">
@@ -103,7 +102,7 @@
         </label>
       </input>
 
-      <h5><b>Slide</b></h5>
+      <h4>Slide</h4>
       <input type="checkbox" id="button-slide">
         <label for="button-slide">
           <div class="motion-demo slide"></div>
@@ -246,6 +245,11 @@
     <h4>Status Message</h4>
     <div class="demo placeholder"></div>
 
+    <div class="section reference">
+      <h3>Further Reading</h3>
+      <!--
+      <a href="http://easings.net/">Easing.net</a>
+      -->
     </div>
   </body>
 </html>
