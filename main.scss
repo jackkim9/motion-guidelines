@@ -3,6 +3,7 @@ $blue: #FF6700;
 $blue2: #74dcff;
 $cyan: #00D4C9;
 $green: #00d400;
+$green2: #87db88;
 $gray-medium: #555555;
 $color-placeholder-text: #fefefe;
 $color-background: #fafafa;
@@ -139,8 +140,12 @@ h6 {
     }
   }
   
-  &.easing-demo {
-    
+  &.statusbar {
+    cursor: pointer;
+    transition: all $duration-longer linear;
+    width: 54rem;
+    height: 7rem;
+    background: repeating-linear-gradient(-45deg,#ececec,#ececec .5rem,#f3f3f3 .5rem,#f3f3f3 1rem);
   }
 }
 
@@ -283,7 +288,6 @@ h6 {
 }
 
 .filter {  
-  
     position:relative;
     max-width:290px;
     height:60px;
@@ -295,7 +299,6 @@ h6 {
   
     &:hover {
       a {
-
         z-index: 1000;     
       }
 
@@ -385,6 +388,9 @@ input[type='checkbox'] {
   background: $blue2;
 }
 
+#button-statusbar:checked + label .statusbar{
+  background: $green2;
+}
 
 //Float Label
 $border: 1px solid #333;
@@ -425,12 +431,12 @@ $padding: 10px;
     }
     
     &:valid + label {
-      /*
+      
       opacity: 1;
       top: 3px;
       font-size: 0.5rem;
       text-transform: uppercase;
-      font-weight: bold;*/
+      font-weight: bold;
     }
     
     &:focus + label {
@@ -528,18 +534,19 @@ a#openPopUp:hover{
   height: 100vh;
   opacity: 0;
 
-    -webkit-transition: opacity  0.35s ease;
-    -moz-transition: opacity 0.35s ease;
-    -o-transition: opacity 0.35s ease;
-    transition: opacity 0.35s ease;
+    -webkit-transition: opacity 0s ease;
+    -moz-transition: opacity 0s ease;
+    -o-transition: opacity 0s ease;
+    transition: opacity 0s ease;
   
 
 }
 .popup .popUpContainer{
   width: 100%;
-  max-width: 500px;
+  max-width: 64rem;
   position: fixed;
   left: 50%;
+  transform: translateX(-25%);
   top: 50%;
     -webkit-transition: top  0.35s ease;
     -moz-transition: top 0.35s ease;
@@ -553,10 +560,16 @@ a#openPopUp:hover{
   header {
     background: black;
     margin: 0;
+    min-height: 2.5rem;
+        -webkit-transition: top  $duration-shorter ease;
+    -moz-transition: top $duration-shorter ease;
+    -o-transition: top $duration-shorter ease;
+    transition: top $duration-shorter ease;
     h2 {
+      text-transform: uppercase;
       font-size: 1rem;
-      font-weight: 400;
-      padding: 0.5em;
+      font-weight: 600;
+      transform: translateY(100%);
       text-align: center;
       color: #fff;
       margin: 0;
@@ -596,10 +609,10 @@ a#openPopUp:hover{
 }
 .popup:target .popUpContainer{
   top: 50px;
-  -webkit-transition: top  0.2s ease;
-  -moz-transition: top 0.2s ease;
-  -o-transition: top 0.2s ease;
-  transition: top 0.2s ease;
+  -webkit-transition: top  $duration-longer $easing-custom-2;
+  -moz-transition: top $duration-longer $easing-custom-2;
+  -o-transition: top $duration-longer $easing-custom-2;
+  transition: top $duration-longer $easing-custom-2;
 }
 
 @media  (max-width: 796px) {

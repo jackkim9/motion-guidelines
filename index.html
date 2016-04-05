@@ -12,6 +12,7 @@
       <h2>Edit UI</h2>
     </header>
 
+    <!-- INTRODUCTION -->
     <div class="section introduction">
       <h3>Introduction</h3>
       <h4>Motion and animation adds an extra dimension to digital design by adding physicality to otherwise 2-dimensional UI elements. Cohesive rhythm of motion and animation makes digital touch-points feel as sophisticated and delightful as the ones in the real world.</h4>
@@ -20,7 +21,7 @@
     <!-- DURATION -->
     <div class="section duration">
       <h3>Duration</h3>
-      <h4>Duration defines how fast an element in moving in the user interface. In the physical world, speed of an object is defined by weight and friction. Heavier objects takeas longer time to move around. Similarly, in the digial interface, large movements should take longer to move. Objects that convey large amount of information such as an error message should also transition slowly to give sufficient amount of time for the users to digest the information throughly.</h4>
+      <h4>Duration defines how fast an element in moving in the user interface. In the physical world, speed of an object is defined by weight and friction. Heavier objects take longer time to move around. Similarly, in the digial interface, large movements should take longer to move. Objects that convey large amount of information such as an error message should also transition slowly to give sufficient amount of time for the users to digest the information throughly.</h4>
       <div class="subsection">
         <h6>Duration Examples</h6>
         <h5>0</h5>
@@ -76,8 +77,8 @@
     <!-- MOTION TYPES -->
     <div class="section type">
       <h3>Motion Types</h3>
-      <h4>Explanation and some comments about the philosophy behind motion types goes here</h4>  
 
+      <!-- FADE IN AND OUT -->
       <h6>Fade In and Out</h6>
       <h5>opacity:0; transform: scale(.8)</h5>
       <input type="checkbox" id="button-fadein">
@@ -86,6 +87,7 @@
         </label>
       </input>
 
+      <!-- GHOSTED -->
       <h6>Ghosted</h6>
       <h5>opacity: .5;</h5>
       <input type="checkbox" id="button-ghosted">
@@ -94,6 +96,7 @@
         </label>
       </input>
 
+      <!-- EXPAND AND CONTRACT -->
       <h6>Expand and Contract</h6>
       <h5>transform: scale(2)</h5>
       <input type="checkbox" id="button-expand">
@@ -102,6 +105,7 @@
         </label>
       </input>
 
+      <!-- SLIDE -->
       <h6>Slide</h6>
       <input type="checkbox" id="button-slide">
         <label for="button-slide">
@@ -113,12 +117,14 @@
     <div class="section example">
       <h3>Examples in the Edit UI</h3>
 
+      <!-- BUTTONS -->
       <h6>Button</h6>
       <div class="button">
         <a class="" href="#">Button</a>
         <div class="hovereffect1"></div>
       </div>
 
+      <!-- FILTERS -->
       <h6>Filter</h6>
       <input type="checkbox" id="button-filter">
         <label for="button-filter">
@@ -178,24 +184,24 @@
       <label for="button-toggles">
 
         <div class="container">
-          <span class="toggle-label">Label</span>
+          <span class="toggle-label">Toggle1</span>
           <label class="switch"><input type="checkbox" />    <div></div>
           </label>
         </div>
         <div class="container">
-          <span class="toggle-label">Label2</span>
-          <label class="switch"><input type="checkbox" />    <div></div>
-          </label>
-        </div>
-
-        <div class="container">
-          <span class="toggle-label">Label3</span>
+          <span class="toggle-label">Toggle2</span>
           <label class="switch"><input type="checkbox" />    <div></div>
           </label>
         </div>
 
         <div class="container">
-          <span class="toggle-label">Label4</span>
+          <span class="toggle-label">Toggle3</span>
+          <label class="switch"><input type="checkbox" />    <div></div>
+          </label>
+        </div>
+
+        <div class="container">
+          <span class="toggle-label">Toggle4</span>
           <label class="switch"><input type="checkbox" />    <div></div>
           </label>
         </div>
@@ -223,11 +229,42 @@
        <a href="#!" class="closePopUpOutSide"></a>    
     </aside>
     </div>
+
     <h5>Multipage modals - from slide one to slide two</h5>
-    <div class="demo placeholder"></div>
+    <div class="container">
+     <a href="#popUp" id="openPopUp">Modal</a>
+
+    <aside id="popUp" class="popup">
+        <div class="popUpContainer">
+           <header>
+            <a href="#!" class="closePopUp">v</a>
+            <h2>Modal Header</h2>
+           </header>
+          <article>
+
+          </article>
+       </div>        
+       <a href="#!" class="closePopUpOutSide"></a>    
+    </aside>
+    </div>
 
     <h5>Multi-tab modals</h5>
-    <div class="demo placeholder"></div>
+    <div class="container">
+     <a href="#popUp" id="openPopUp">Modal</a>
+
+    <aside id="popUp" class="popup">
+        <div class="popUpContainer">
+           <header>
+            <a href="#!" class="closePopUp">v</a>
+            <h2>Modal Header</h2>
+           </header>
+          <article>
+
+          </article>
+       </div>        
+       <a href="#!" class="closePopUpOutSide"></a>    
+    </aside>
+    </div>
 
     <!-- REDACTOR -->
     <h6>Redactor</h6>
@@ -240,21 +277,43 @@
     <!-- STATUS BAR -->
     <h6>Status Bar</h6>
     <h5>Color change (draft, scheduled and published)</h5>
-    <div class="demo placeholder"></div>
+
+    <input type="checkbox" id="button-statusbar">
+      <label for="button-statusbar">
+        <div class="demo statusbar">
+        </div>
+      </label>
+    </input>
 
     <!-- STATUS MESSAGE -->
     <h6>Status Message</h6>
-    <div class="demo placeholder"></div>
+    <div class="container">
+     <a href="#popUp" id="openPopUp">Status Message</a>
+
+    <aside id="popUp" class="popup">
+        <div class="popUpContainer">
+           <header>
+            <a href="#!" class="closePopUp">v</a>
+            <h2>Modal Header</h2>
+           </header>
+          <article>
+
+          </article>
+       </div>        
+       <a href="#!" class="closePopUpOutSide"></a>    
+    </aside>
+    </div>
 
     <div class="section reference">
       <h3>Further Reading</h3>
       <h6>Duration</h6>
-      <h4>Example link</h4>            
+      <h4>http://examplelink.com</h4>            
       <h6>Easing</h6>
-      <h4>Example link</h4>            
+      <h4>http://examplelink.com</h4>
+      <h6>Elevation</h6>
+      <h4>http://examplelink.com</h4>                  
       <h6>Keyframe</h6>
-      <h4>Example link</h4>            
-
+      <h4>http://examplelink.com</h4>            
 
       <!--
       <a href="http://easings.net/">Easing.net</a>
