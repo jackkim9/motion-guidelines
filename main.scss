@@ -43,11 +43,11 @@ $easing-custom-2: cubic-bezier(0.465, 0.183, 0.153, 0.946);
 @keyframes statusmessage {
 
   0% {
-
+    opacity: 1;
   }
 
   100% {
-
+    opacity: 0;
   }
 }
   
@@ -754,4 +754,73 @@ table {
 
 span.do, span.dont {
   height: 3rem;
+}
+
+//Alert Message
+
+.notification-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 5rem;
+  text-align: center;
+  -webkit-transform: translate3d(0, -5em, 0);
+  -moz-transform: translate3d(0, -5em, 0);
+  -ms-transform: translate3d(0, -5em, 0);
+  -o-transform: translate3d(0, -5em, 0);
+  transform: translate3d(0, -5em, 0);
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0.67, 0, 0, 1);
+  -moz-transition: -moz-transform 200ms cubic-bezier(0.67, 0, 0, 1);
+  transition: transform 200ms cubic-bezier(0.67, 0, 0, 1);
+  line-height: 1em;
+}
+.notification-bar.error {
+  background: #f23a55;
+}
+.notification-bar > a {
+  -webkit-transform: translate3d(0, -10.25em, 2rem);
+  -moz-transform: translate3d(0, -10.25em, 2rem);
+  -ms-transform: translate3d(0, -10.25em, 2rem);
+  -o-transform: translate3d(0, -10.25em, 2rem);
+  transform: translate3d(0, -10.25em, 2rem);
+  -webkit-transition: -webkit-transform 700ms cubic-bezier(0.67, 0, 0, 1);
+  -moz-transition: -moz-transform 700ms cubic-bezier(0.67, 0, 0, 1);
+  transition: transform 700ms cubic-bezier(0.67, 0, 0, 1);
+  display: block;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.notification-bar > a, .notification-bar > a:hover, .notification-bar > a:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+.notification-bar.active {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.notification-bar.active > a {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+#toggle-error {
+  width: 15rem;
+  padding-top: .75rem;
+  height: 3rem;
+  cursor: pointer;
+  text-align: center;
+  font-family: avenir;
+  color: #fff;
+  background: #333;
+  border: 1px solid #000;
 }

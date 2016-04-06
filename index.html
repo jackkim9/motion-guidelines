@@ -4,7 +4,11 @@
   <head>
     <title>Motion Guidelines</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </head>
+  
   <body>
     <!-- HEADER -->
     <header>
@@ -307,17 +311,30 @@
 
     <!-- STATUS MESSAGE -->
     <h6>Status Message</h6>
+
+    <!--
     <div class="container">
-     <a href="#statusmessage" id="openPopUp">Status Message</a>
+     <a href="#statusmessage" id="openPopUp">View Status Message</a>
 
     <aside id="statusmessage" class="messagebar">
+
         <div class="popUpContainer">
            <header>
             <h2>This is the status message</h2>
            </header>
-       </div>        
+       </div> 
+
     </aside>
     </div>
+-->
+
+
+<div class="notification-bar success">
+  <a class="message">Not for nothing, but something's not working here.</a>
+</div>
+
+<div id="toggle-error"><h4>Error Message</h4></div>
+
 
     <div class="section reference">
       <h3>Further Reading</h3>
