@@ -45,7 +45,7 @@ h4 {
 h5 {
   font-size: 1rem;
   font-weight: 400;
-  color: #FF6700;
+  color: #FF0009;
   font-style: italic; }
 
 h6 {
@@ -66,7 +66,7 @@ h6 {
   .demo.duration {
     width: 7.5rem;
     height: 7.5rem;
-    background: #FF6700;
+    background: #FF0009;
     transition-property: border-radius, background; }
     .demo.duration.zero {
       transition-duration: 0; }
@@ -80,6 +80,8 @@ h6 {
       transition-duration: 700ms; }
     .demo.duration.message {
       transition-duration: 2500ms; }
+    .demo.duration.base-duration {
+      background-color: shade(#FF0009, 30%); }
     .demo.duration:hover {
       background: #00d400;
       border-radius: 50%; }
@@ -109,13 +111,13 @@ h6 {
   height: 3rem;
   width: 3rem;
   border-radius: 1.5rem;
-  background-color: #FF6700;
+  background-color: #FF0009;
   animation-name: balls;
   animation-duration: 2500ms;
   animation-delay: 0.5s;
   animation-iteration-count: infinite; }
   .ball.custom-easing {
-    background-color: #00D4C9; }
+    background-color: shade(#FF0009, 30%); }
   .ball.easing-0 {
     animation-timing-function: ease; }
   .ball.easing-1 {
@@ -133,12 +135,15 @@ h6 {
     animation-timing-function: cubic-bezier(0.465, 0.183, 0.153, 0.946);
     -webkit-animation-timing-function: cubic-bezier(0.465, 0.183, 0.153, 0.946); }
 
+.custom-easing, .base-duration {
+  color: shade(#FF0009, 30%); }
+
 .motion-demo {
   position: relative;
   height: 6rem;
   width: 6rem;
   border-radius: 3rem;
-  background-color: #FF6700;
+  background-color: #FF0009;
   margin-bottom: 3rem;
   display: block;
   transition-duration: 200ms;

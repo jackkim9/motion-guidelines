@@ -1,14 +1,4 @@
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Motion Guidelines</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-  </head>
-  
   <body>
     <!-- HEADER -->
     <header>
@@ -34,8 +24,8 @@
         <div class="demo duration shorter"></div>
         <h5>$duration-<b>short</b>: 100ms</h5>
         <div class="demo duration short"></div>
-        <h5>$duration-<b>base</b>: 200ms</h5>
-        <div class="demo duration base"></div>
+        <h5 class="base-duration">$duration-<b>base</b>: 200ms</h5>
+        <div class="demo duration base base-duration"></div>
         <h5>$duration-<b>long</b>: 400ms</h5>
         <div class="demo duration long"></div>
         <h5>$duration-<b>longer</b>: 700ms</h5>
@@ -65,10 +55,10 @@
         <div class="ball easing-3"></div>
         <h5>linear</h5>
         <div class="ball easing-4"></div>
-        <h5>$easing-<b>custom-1</b> cubic-bezier(.67, 0, 0, 1)</h5>
-        <div class="ball easing-5"></div>
-        <h5>$easing-<b>custom-2</b> cubic-bezier(0.465, 0.183, 0.153, 0.946)</h5>
-        <div class="ball easing-6"></div>
+        <h5 class="custom-easing">$easing-<b>custom-1</b> cubic-bezier(.67, 0, 0, 1)</h5>
+        <div class="ball easing-5 custom-easing"></div>
+        <h5 class="custom-easing">$easing-<b>custom-2</b> cubic-bezier(0.465, 0.183, 0.153, 0.946)</h5>
+        <div class="ball easing-6 custom-easing"></div>
       </div>
     </div>
     <!--

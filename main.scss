@@ -1,5 +1,5 @@
 //colors
-$blue: #FF6700;
+$blue: #FF0009;
 $blue2: #74dcff;
 $cyan: #00D4C9;
 $green: #00d400;
@@ -145,10 +145,13 @@ h6 {
       transition-duration: $duration-message;
     }
     
+    &.base-duration {
+      background-color: shade( $blue, 30% );
+    }
     &:hover {
       background: $green;
       border-radius: 50%;
-    }
+    }   
   }
   
   &.statusbar {
@@ -191,7 +194,7 @@ h6 {
   animation-iteration-count: infinite;
   
   &.custom-easing {
-    background-color: $cyan;
+    background-color: shade( $blue, 30% );
   }
   
   &.easing-0 {
@@ -229,6 +232,10 @@ h6 {
   }
 }
 
+.custom-easing, .base-duration {
+  color: shade( $blue, 30% );
+  //background-color: shade( $blue, 30% );
+}
 .motion-demo {
   position: relative;
   height: $ball-height*2;
