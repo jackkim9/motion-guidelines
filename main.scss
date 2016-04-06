@@ -42,6 +42,13 @@ $easing-custom-2: cubic-bezier(0.465, 0.183, 0.153, 0.946);
 
 @keyframes statusmessage {
 
+  0% {
+
+  }
+
+  100% {
+
+  }
 }
   
 * {
@@ -147,6 +154,24 @@ h6 {
   &.statusbar {
     cursor: pointer;
     transition: all $duration-longer linear;
+    width: 54rem;
+    height: 7rem;
+    background: repeating-linear-gradient(-45deg,#ececec,#ececec .5rem,#f3f3f3 .5rem,#f3f3f3 1rem);
+  }
+
+    &.statusbar2 {
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all $duration-short linear;
+    width: 54rem;
+    height: 7rem;
+    background: repeating-linear-gradient(-45deg,#ececec,#ececec .5rem,#f3f3f3 .5rem,#f3f3f3 1rem);
+  }
+
+  &.statusbar3 {
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all $duration-longer $easing-custom-1;
     width: 54rem;
     height: 7rem;
     background: repeating-linear-gradient(-45deg,#ececec,#ececec .5rem,#f3f3f3 .5rem,#f3f3f3 1rem);
@@ -398,6 +423,14 @@ input[type='checkbox'] {
   background: $green2;
 }
 
+#button-statusbar2:checked + label .statusbar2{
+  background: $green2;
+}
+
+#button-statusbar3:checked + label .statusbar3{
+  background: $green2;
+}
+
 //Float Label
 $border: 1px solid #333;
 $padding: 10px;
@@ -625,24 +658,6 @@ a#openPopUp:hover{
   transition: top $duration-longer $easing-custom-2;
 }
 
-@media  (max-width: 796px) {
-  .popup .popUpContainer{
-    width: 100%;
-    max-width: none;
-    left: 5%;
-    margin-left: 0;
-  }
-  .popup ul{
-    padding: 0 1em 0 1em;
-  }
-  .popup:target .popUpContainer{
-    top: 25px;
-    -webkit-transition: top  0.2s ease;
-    -moz-transition: top 0.2s ease;
-    -o-transition: top 0.2s ease;
-    transition: top 0.2s ease;
-  }
-}
 
 //Status Message
 
@@ -654,11 +669,12 @@ a#openPopUp:hover{
   background: rgba(0,0,0, 0.75);
   width: 100vw;
   opacity: 0;
-
-    -webkit-transition: opacity 0s ease;
-    -moz-transition: opacity 0s ease;
-    -o-transition: opacity 0s ease;
-    transition: opacity 0s ease;
+/*
+  -webkit-transition: opacity 3s ease;
+  -moz-transition: opacity 3s ease;
+  -o-transition: opacity 3s ease;
+  */
+  transition: top $duration-long ease;
   
 
 }
@@ -717,17 +733,25 @@ a#openPopUp:hover{
 
 }
 
-@media  (max-width: 796px) {
-  .messagebar .popUpContainer{
+//Duration
+/*
+table {
+  max-width: 55rem;
+}
+
+.examples-duration {
+  tr {
+    padding-bottom: 3rem;
     width: 100%;
-    max-width: none;
-    left: 5%;
-    margin-left: 0;
+    td{
+      height: 20rem;
+      width: calc(55rem/3);
+    }
   }
-  .messagebar ul{
-    padding: 0 1em 0 1em;
-  }
-  .messagebar:target .popUpContainer{
-    top: 25px;
-  }
+
+}
+*/
+
+span.do, span.dont {
+  height: 3rem;
 }
