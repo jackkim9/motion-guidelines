@@ -24,30 +24,39 @@
       <h4>Duration defines how fast an element in moving in the user interface. In the physical world, speed of an object is defined by weight and friction. Heavier objects take longer time to move around. Similarly, in the digial interface, large movements should take longer to move. Objects that convey large amount of information such as an error message should also transition slowly to give sufficient amount of time for the users to digest the information throughly.</h4>
       <div class="subsection">
         <h6>Duration Examples</h6>
-        <h5>0</h5>
+        <h5>$duration-<b>base</b>: 200ms</h5>
         <div class="demo duration base"></div>
-        <table>
+        <table class="examples-duration">
         <tr>
           <td>
+          <h5>$duration-<b>long</b>: 400ms</h5>
+          <div class="demo duration long"></div>
+          </td>
+          <td>
+          <h5>$duration-<b>longer</b>: 700ms</h5>
+          <div class="demo duration longer"></div>
+          </td>
+          <td>
+          <h5>$duration-<b>message</b>: 2500ms</h5>
+          <div class="demo duration message"></div>  
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+          <h5>0</h5>
           <div class="demo duration instant"></div>
+          </td>
+          <td>
           <h5>$duration-<b>shorter</b>: 70ms</h5>
-          </td>
-          <td>
           <div class="demo duration shorter"></div>
-          <h5>$duration-<b>short</b>: 100ms</h5>
           </td>
           <td>
+          <h5>$duration-<b>short</b>: 100ms</h5>
           <div class="demo duration short"></div>
-          <h5>$duration-<b>base</b>: 200ms</h5>
           </td>
         </tr>
         </table>
-        <h5>$duration-<b>long</b>: 400ms</h5>
-        <div class="demo duration long"></div>
-        <h5>$duration-<b>longer</b>: 700ms</h5>
-        <div class="demo duration longer"></div>
-        <h5>$duration-<b>message</b>: 2500ms</h5>
-        <div class="demo duration message"></div>  
       </div>
     </div>
 
