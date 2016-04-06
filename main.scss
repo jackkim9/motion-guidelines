@@ -143,14 +143,14 @@ h6 {
       border-radius: 50%;
     }
   }
-  
+  /*
   &.statusbar {
     cursor: pointer;
     transition: all $duration-longer linear;
     width: 54rem;
     height: 7rem;
     background: repeating-linear-gradient(-45deg,#ececec,#ececec .5rem,#f3f3f3 .5rem,#f3f3f3 1rem);
-  }
+  }*/
 }
 
 .ball {
@@ -394,9 +394,11 @@ input[type='checkbox'] {
   background: $blue2;
 }
 
+/*
 #button-statusbar:checked + label .statusbar{
   background: $green2;
 }
+*/
 
 //Float Label
 $border: 1px solid #333;
@@ -625,24 +627,6 @@ a#openPopUp:hover{
   transition: top $duration-longer $easing-custom-2;
 }
 
-@media  (max-width: 796px) {
-  .popup .popUpContainer{
-    width: 100%;
-    max-width: none;
-    left: 5%;
-    margin-left: 0;
-  }
-  .popup ul{
-    padding: 0 1em 0 1em;
-  }
-  .popup:target .popUpContainer{
-    top: 25px;
-    -webkit-transition: top  0.2s ease;
-    -moz-transition: top 0.2s ease;
-    -o-transition: top 0.2s ease;
-    transition: top 0.2s ease;
-  }
-}
 
 //Status Message
 
@@ -717,17 +701,31 @@ a#openPopUp:hover{
 
 }
 
-@media  (max-width: 796px) {
-  .messagebar .popUpContainer{
-    width: 100%;
-    max-width: none;
-    left: 5%;
-    margin-left: 0;
-  }
-  .messagebar ul{
-    padding: 0 1em 0 1em;
-  }
-  .messagebar:target .popUpContainer{
-    top: 25px;
-  }
+//Status Bar
+#statusbar {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+.button-statusbar { 
+  -webkit-appearance: push-button;
+  -moz-appearance: button; 
+  display: inline-block;
+  margin: 60px 0 10px 0;
+  cursor: pointer;
+}
+
+/* Default State */
+.statusbar {
+   background: green;
+   width: 400px;
+   height: 100px;
+   line-height: 100px;
+   color: white;
+   text-align: center;
+}
+
+/* Toggled State */
+#statusbar:checked ~ div {
+   background: red;
 }
