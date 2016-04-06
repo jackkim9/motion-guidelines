@@ -81,7 +81,7 @@ h6 {
     .demo.duration.message {
       transition-duration: 2500ms; }
     .demo.duration.base-duration {
-      background-color: shade(#FF0009, 30%); }
+      background-color: #b30006; }
     .demo.duration:hover {
       background: #00d400;
       border-radius: 50%; }
@@ -117,7 +117,7 @@ h6 {
   animation-delay: 0.5s;
   animation-iteration-count: infinite; }
   .ball.custom-easing {
-    background-color: shade(#FF0009, 30%); }
+    background-color: #b30006; }
   .ball.easing-0 {
     animation-timing-function: ease; }
   .ball.easing-1 {
@@ -136,7 +136,7 @@ h6 {
     -webkit-animation-timing-function: cubic-bezier(0.465, 0.183, 0.153, 0.946); }
 
 .custom-easing, .base-duration {
-  color: shade(#FF0009, 30%); }
+  color: #b30006; }
 
 .motion-demo {
   position: relative;

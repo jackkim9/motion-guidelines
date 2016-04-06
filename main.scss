@@ -24,6 +24,9 @@ $duration-message: 2500ms;
 $easing-custom-1: cubic-bezier(.67, 0, 0, 1);
 $easing-custom-2: cubic-bezier(0.465, 0.183, 0.153, 0.946);
 
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
 
 @keyframes balls {
   0% {
