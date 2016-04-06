@@ -143,14 +143,14 @@ h6 {
       border-radius: 50%;
     }
   }
-  /*
+  
   &.statusbar {
     cursor: pointer;
     transition: all $duration-longer linear;
     width: 54rem;
     height: 7rem;
     background: repeating-linear-gradient(-45deg,#ececec,#ececec .5rem,#f3f3f3 .5rem,#f3f3f3 1rem);
-  }*/
+  }
 }
 
 .ball {
@@ -394,11 +394,10 @@ input[type='checkbox'] {
   background: $blue2;
 }
 
-/*
 #button-statusbar:checked + label .statusbar{
   background: $green2;
 }
-*/
+
 
 //Float Label
 $border: 1px solid #333;
@@ -701,31 +700,19 @@ a#openPopUp:hover{
 
 }
 
-//Status Bar
-#statusbar {
-   position: absolute;
-   top: -9999px;
-   left: -9999px;
-}
-.button-statusbar { 
-  -webkit-appearance: push-button;
-  -moz-appearance: button; 
-  display: inline-block;
-  margin: 60px 0 10px 0;
-  cursor: pointer;
+//Duration
+
+table {
+  width: 55rem;
 }
 
-/* Default State */
-.statusbar {
-   background: green;
-   width: 400px;
-   height: 100px;
-   line-height: 100px;
-   color: white;
-   text-align: center;
-}
+.examples-duration {
+  tr {
+    width: 100%;
+    td{
+      height: 30rem;
+      width: calc(100%/3);
+    }
+  }
 
-/* Toggled State */
-#statusbar:checked ~ div {
-   background: red;
 }
