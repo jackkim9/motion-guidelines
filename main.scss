@@ -815,12 +815,14 @@ span.do, span.dont {
 
 #toggle-error {
   width: 15rem;
-  padding-top: .75rem;
-  height: 3rem;
   cursor: pointer;
   text-align: center;
   font-family: avenir;
   color: #fff;
   background: #333;
   border: 1px solid #000;
+
+  h4{
+    top:50%;
+  }
 }
