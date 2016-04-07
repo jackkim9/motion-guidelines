@@ -19,7 +19,7 @@
     <!-- INTRODUCTION -->
     <div class="section introduction">
       <h3>Introduction</h3>
-      <h4>Motion and animation adds an extra dimension to digital design by adding physicality to otherwise 2-dimensional UI elements. Cohesive rhythm of motion and animation makes digital touch-points feel as sophisticated and delightful as the ones in the real world. Overall physicality of a product helps users orient themselves by making patterns <span class="thick">feel consistent</span></b>, and thus enhances the user experience.</h4>
+      <h4>Motion and animation adds an extra dimension to digital design by adding physicality to otherwise 2-dimensional UI elements. Cohesive rhythm of motion and animation makes digital touch-points feel as sophisticated and delightful as the ones in the real world. Overall physicality of a product helps users orient themselves by making patterns, and thus enhances the user experience. Coherent animation makes the product <span class="thick">feel consistent</span>.</h4>
     </div>
 
     <!-- DURATION -->
@@ -28,7 +28,7 @@
       <h4><span class="thick">TL;DR</span> Duration defines how fast an element in moving in the user interface. Avoid using same duration (e.g. 300ms) everywhere and choose cohesiveness over consistency. Sweet spots are 200 - 300ms. Stay within 70 - 7000ms.</h4>
       <h4>Duration defines how fast an element in moving in the user interface. In the physical world, everything moves at a different speed and the speed of an object is governed by its weight and friction. Heavier objects naturally take longer time to shift around. Similarly, in the digial interface, large movements should take longer to move. Objects that convey large amount of information such as an error message should also transition slowly to give sufficient amount of time for the users to digest the information throughly. Overall, cohesiveness in duration matters more than the consistency in making the pattern feel consistent.</h4>
       <div class="subsection">
-        <h6>Duration Examples</h6>
+        <h6>Sass Tokens</h6>
         <h5>0</h5>
         <div class="demo duration instant"></div>
         <h5>$duration-<b>shorter</b>: 70ms</h5>
@@ -56,20 +56,20 @@
       <h6>"<b>Accelerate</b> system initiated interactions"</h6>
 -->
       <div class="subsection">
-        <h6>Easing Examples</h6>
+        <h6>Sass Tokens</h6>
         <h5>ease</h5>
         <div class="ball easing-0"></div>
         <h5>ease-in-out</h5>
         <div class="ball easing-1"></div>
-        <h5>ease-in</h5>
+        <h5>ease-in (accelerates)</h5>
         <div class="ball easing-2"></div>
-        <h5>ease-out</h5>
+        <h5>ease-out (decelerates)</h5>
         <div class="ball easing-3"></div>
         <h5>linear</h5>
         <div class="ball easing-4"></div>
         <h5 class="custom-easing">$easing-<b>custom-1</b> cubic-bezier(.67, 0, 0, 1)</h5>
         <div class="ball easing-5 custom-easing"></div>
-        <h5 class="custom-easing">$easing-<b>custom-2</b> cubic-bezier(0.465, 0.183, 0.153, 0.946)</h5>
+        <h5 class="custom-easing">$easing-<b>custom-2</b> cubic-bezier(0,.3,.12,1)</h5>
         <div class="ball easing-6 custom-easing"></div>
       </div>
     </div>
@@ -227,7 +227,7 @@
     <aside id="popUp" class="popup">
         <div class="popUpContainer">
            <header>
-            <a href="#!" class="closePopUp">v</a>
+            <a href="#!" class="closePopUp"></a>
             <h2>Modal Header</h2>
            </header>
           <article>
@@ -343,9 +343,9 @@
       <h6>Duration</h6>
       <h4>http://examplelink.com</h4>            
       <h6>Easing</h6>
-      <h4>http://examplelink.com</h4>
+      <h4>http://easings.net/</h4>
       <h6>Elevation</h6>
-      <h4>http://examplelink.com</h4>                  
+      <h4>https://www.lightningdesignsystem.com/design/motion/</h4>            
       <h6>Keyframe</h6>
       <h4>http://examplelink.com</h4>            
 
