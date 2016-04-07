@@ -39,7 +39,8 @@ h3 {
 
 h4 {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.35rem;
+  line-height: 1.5;
   max-width: 40rem; }
 
 h5 {
@@ -49,8 +50,13 @@ h5 {
   font-style: italic; }
 
 h6 {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   font-weight: 100; }
+
+span.thick {
+  position: relative;
+  font-weight: 600;
+  text-decoration: underline; }
 
 .section {
   padding-bottom: 2rem;
