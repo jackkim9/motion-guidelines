@@ -19,15 +19,16 @@
     <!-- INTRODUCTION -->
     <div class="section introduction">
       <h3>Introduction</h3>
-      <h4>Motion and animation adds an extra dimension to digital design by adding physicality to otherwise 2-dimensional UI elements. Cohesive rhythm of motion and animation makes digital touch-points feel as sophisticated and delightful as the ones in the real world.</h4>
+      <h4>Motion and animation adds an extra dimension to digital design by adding physicality to otherwise 2-dimensional UI elements. The cohesive rhythm of motion and animation make digital touchpoints feel as sophisticated and delightful as ones in the real world. Overall, carefully controliing physicality of a product helps users orient themselves, by making patterns <span class="thick">feel consistent</span>, and thus enhances the user’s experience.</h4>
     </div>
 
     <!-- DURATION -->
     <div class="section duration">
       <h3>Duration</h3>
-      <h4>Duration defines how fast an element in moving in the user interface. In the physical world, speed of an object is defined by weight and friction. Heavier objects take longer time to move around. Similarly, in the digial interface, large movements should take longer to move. Objects that convey large amount of information such as an error message should also transition slowly to give sufficient amount of time for the users to digest the information throughly.</h4>
+      <h4><span class="thick">TL;DR</span> Duration defines how fast an element is moving on the user interface. Avoid using same duration (e.g. 300ms) everywhere and choose cohesiveness over consistency. Sweet spots are 200 - 300ms. Stay within 70 - 7000ms.</h4>
+      <h4>Duration defines how fast an element is moving on the user interface. In the physical world, objects moves at different speeds and the speed of an object is governed by its weight and friction. Heavier objects naturally take longer time to shift around. Similarly, on the digital interface, large movements should take longer to move. Objects that convey large amounts of information, such as an error message, should also transition slowly to give sufficient amount of time for the users to digest the information thoroughly. Overall, cohesiveness in duration matters more than the consistency in making the pattern feel consistent.</h4>
       <div class="subsection">
-        <h6>Duration Examples</h6>
+        <h6>Variables</h6>
         <h5>0</h5>
         <div class="demo duration instant"></div>
         <h5>$duration-<b>shorter</b>: 70ms</h5>
@@ -48,26 +49,23 @@
     <!-- EASING -->
     <div class="section easing">
       <h3>Easing</h3>
-      <h4>Easing defines how an object accelerates over time. (Something about asymmetrical entrance and exit</h4>
-<!--
-      <h6>"<b>Decelerate</b> human interactions"</h6>
-      <h6>"<b>Accelerate</b> system initiated interactions"</h6>
--->
+      <h4><span class="thick">TL;DR</span> Easing defines how an object in motion accelerates over time. Carefully curated easings help define characters to movements and adds fun in the interaction. (In reality, things rarely move linearly. Normal “ease" just doesn’t cut it.)</h4>
+      <h4>Easing defines how an object in motion accelerates over time. In the real world, how one enters a room often looks different from how one exits. Asymmetry of the entrance and exit brings the digital interaction closer to the one in the real world. Users tend to prefer an element to decelerate (ease-out) when they are asking the computer to do something, whereas when they are expecting an answer or reaction from it, they prefer it to accelerate (ease-in).</h4>
       <div class="subsection">
-        <h6>Easing Examples</h6>
+        <h6>Variables</h6>
         <h5>ease</h5>
         <div class="ball easing-0"></div>
         <h5>ease-in-out</h5>
         <div class="ball easing-1"></div>
-        <h5>ease-in</h5>
+        <h5>ease-in (accelerates)</h5>
         <div class="ball easing-2"></div>
-        <h5>ease-out</h5>
+        <h5>ease-out (decelerates)</h5>
         <div class="ball easing-3"></div>
         <h5>linear</h5>
         <div class="ball easing-4"></div>
         <h5 class="custom-easing">$easing-<b>custom-1</b> cubic-bezier(.67, 0, 0, 1)</h5>
         <div class="ball easing-5 custom-easing"></div>
-        <h5 class="custom-easing">$easing-<b>custom-2</b> cubic-bezier(0.465, 0.183, 0.153, 0.946)</h5>
+        <h5 class="custom-easing">$easing-<b>custom-2</b> cubic-bezier(0,.22,.12,1)</h5>
         <div class="ball easing-6 custom-easing"></div>
       </div>
     </div>
@@ -84,7 +82,7 @@
 
       <!-- FADE IN AND OUT -->
       <h6>Fade In and Out</h6>
-      <h5>opacity:0; transform: scale(.8)</h5>
+      <h5>opacity:0; transform: scale(.8), $easing-custom-1</h5>
       <input type="checkbox" id="button-fadein">
         <label for="button-fadein">
           <div class="motion-demo fadein"></div>
@@ -93,7 +91,7 @@
 
       <!-- GHOSTED -->
       <h6>Ghosted</h6>
-      <h5>opacity: .5;</h5>
+      <h5>opacity: .5, $easing-custom-1</h5>
       <input type="checkbox" id="button-ghosted">
         <label for="button-ghosted">
           <div class="motion-demo ghosted"></div>
@@ -102,7 +100,7 @@
 
       <!-- EXPAND AND CONTRACT -->
       <h6>Expand and Contract</h6>
-      <h5>transform: scale(2)</h5>
+      <h5>transform: scale(2), $easing-custom-1</h5>
       <input type="checkbox" id="button-expand">
         <label for="button-expand">
           <div class="motion-demo expand"></div>
@@ -111,7 +109,7 @@
 
       <!-- SLIDE -->
       <h6>Slide</h6>
-      <h5>margin-left: -15rem</h5>
+      <h5>margin-left: -15rem, $easing-custom-2</h5>
       <input type="checkbox" id="button-slide">
         <label for="button-slide">
           <div class="motion-demo slide"></div>
@@ -225,7 +223,7 @@
     <aside id="popUp" class="popup">
         <div class="popUpContainer">
            <header>
-            <a href="#!" class="closePopUp">v</a>
+            <a href="#!" class="closePopUp"></a>
             <h2>Modal Header</h2>
            </header>
           <article>
@@ -341,9 +339,9 @@
       <h6>Duration</h6>
       <h4>http://examplelink.com</h4>            
       <h6>Easing</h6>
-      <h4>http://examplelink.com</h4>
+      <h4>http://easings.net/</h4>
       <h6>Elevation</h6>
-      <h4>http://examplelink.com</h4>                  
+      <h4>https://www.lightningdesignsystem.com/design/motion/</h4>            
       <h6>Keyframe</h6>
       <h4>http://examplelink.com</h4>            
 
