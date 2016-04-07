@@ -138,8 +138,8 @@ span.thick {
     animation-timing-function: cubic-bezier(0.67, 0, 0, 1);
     -webkit-animation-timing-function: cubic-bezier(0.67, 0, 0, 1); }
   .ball.easing-6 {
-    animation-timing-function: cubic-bezier(0, 0.3, 0.12, 1);
-    -webkit-animation-timing-function: cubic-bezier(0, 0.3, 0.12, 1); }
+    animation-timing-function: cubic-bezier(0, 0.22, 0.12, 1);
+    -webkit-animation-timing-function: cubic-bezier(0, 0.22, 0.12, 1); }
 
 .custom-easing, .base-duration {
   color: #b30006; }
@@ -156,7 +156,7 @@ span.thick {
   transition-timing-fuction: cubic-bezier(0.67, 0, 0, 1);
   transition-property: all; }
   .motion-demo.slide {
-    transition-timing-fuction: cubic-bezier(0, 0.3, 0.12, 1); }
+    transition-timing-fuction: cubic-bezier(0, 0.22, 0.12, 1); }
 
 .button {
   cursor: pointer;
@@ -472,10 +472,10 @@ a#openPopUp:hover {
 
 .popup:target .popUpContainer {
   top: 50px;
-  -webkit-transition: top 700ms cubic-bezier(0, 0.3, 0.12, 1);
-  -moz-transition: top 700ms cubic-bezier(0, 0.3, 0.12, 1);
-  -o-transition: top 700ms cubic-bezier(0, 0.3, 0.12, 1);
-  transition: top 700ms cubic-bezier(0, 0.3, 0.12, 1); }
+  -webkit-transition: top 700ms cubic-bezier(0, 0.22, 0.12, 1);
+  -moz-transition: top 700ms cubic-bezier(0, 0.22, 0.12, 1);
+  -o-transition: top 700ms cubic-bezier(0, 0.22, 0.12, 1);
+  transition: top 700ms cubic-bezier(0, 0.22, 0.12, 1); }
 
 .messagebar {
   position: fixed;
