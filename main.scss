@@ -1,5 +1,5 @@
 //colors
-$blue: #FF6700;
+$blue: #FF0009;
 $blue2: #74dcff;
 $cyan: #00D4C9;
 $green: #00d400;
@@ -24,6 +24,9 @@ $duration-message: 2500ms;
 $easing-custom-1: cubic-bezier(.67, 0, 0, 1);
 $easing-custom-2: cubic-bezier(0.465, 0.183, 0.153, 0.946);
 
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
 
 @keyframes balls {
   0% {
@@ -145,10 +148,13 @@ h6 {
       transition-duration: $duration-message;
     }
     
+    &.base-duration {
+      background-color: shade( $blue, 30% );
+    }
     &:hover {
       background: $green;
       border-radius: 50%;
-    }
+    }   
   }
   
   &.statusbar {
@@ -191,7 +197,7 @@ h6 {
   animation-iteration-count: infinite;
   
   &.custom-easing {
-    background-color: $cyan;
+    background-color: shade( $blue, 30% );
   }
   
   &.easing-0 {
@@ -229,6 +235,10 @@ h6 {
   }
 }
 
+.custom-easing, .base-duration {
+  color: shade( $blue, 30% );
+  //background-color: shade( $blue, 30% );
+}
 .motion-demo {
   position: relative;
   height: $ball-height*2;
