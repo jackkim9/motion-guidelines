@@ -710,8 +710,9 @@ a#openPopUp:hover{
 .popup2 .popUpContainer{
   width: 100%;
   max-width: 64rem;
+  left: calc(50% + 64rem);
   position: fixed;
-  left: 50%;
+  //left: 50%;
   transform: translateX(-25%);
   top: 50%;
     -webkit-transition: left  0.35s ease;
@@ -795,10 +796,11 @@ a#openPopUp:hover{
 
 .popup2:target .popUpContainer{
   top: 50px;
-  -webkit-transition: left  $duration-longer $easing-custom-2;
-  -moz-transition: left $duration-longer $easing-custom-2;
-  -o-transition: left $duration-longer $easing-custom-2;
-  transition: left $duration-longer $easing-custom-2;
+  left: 50%;
+  -webkit-transition: left  $duration-longer $easing-custom-1;
+  -moz-transition: left $duration-longer $easing-custom-1;
+  -o-transition: left $duration-longer $easing-custom-1;
+  transition: left $duration-longer $easing-custom-1;
 }
 
 //Status Message
