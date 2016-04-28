@@ -43,7 +43,8 @@ h4 {
   line-height: 1.5;
   max-width: 40rem; }
   h4 a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #555555; }
 
 h5 {
   font-size: 1rem;
