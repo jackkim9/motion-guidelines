@@ -91,6 +91,11 @@ h4 {
   font-size: 1.35rem;
   line-height: 1.5;
   max-width: 40rem;
+
+  a {
+    text-decoration: none;
+    color: $gray-medium;
+  }
 }
 
 h5 {
@@ -642,11 +647,26 @@ a#openPopUp:hover{
   display: block;
 }
 .popup article{
+  padding: 2rem;
   height: 300px;
   background-color: white;
 }
 
 .popup a.closePopUp{
+  font-family: avenir;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  top: 0.2em;
+  left: 0.375em;
+  margin: 0;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.popup a.newpage{
+  font-family: avenir;
+  font-weight: 700;  
   color: #fff;
   position: absolute;
   top: 0.2em;
@@ -675,6 +695,118 @@ a#openPopUp:hover{
   transition: top $duration-longer $easing-custom-2;
 }
 
+.popup2{
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  z-index: 9999999;
+  background: rgba(0,0,0, 0.75);
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+
+    -webkit-transition: left 3s ease;
+    -moz-transition: left 3s ease;
+    -o-transition: left 3s ease;
+    transition: left 3s ease;
+  
+
+}
+.popup2 .popUpContainer{
+  width: 100%;
+  max-width: 64rem;
+  left: calc(50% + 64rem);
+  position: fixed;
+  //left: 50%;
+  transform: translateX(-25%);
+  top: 50%;
+    -webkit-transition: left  0.35s ease;
+    -moz-transition: left 0.35s ease;
+    -o-transition: left 0.35s ease;
+    transition: left 0.35s ease;
+  margin-left: -250px;
+  background-color: #ffffff;
+
+  border-radius: 2px;
+  z-index: 9999999; 
+  header {
+    background: black;
+    margin: 0;
+    min-height: 2.5rem;
+        -webkit-transition: top  $duration-shorter ease;
+    -moz-transition: top $duration-shorter ease;
+    -o-transition: top $duration-shorter ease;
+    transition: top $duration-shorter ease;
+    h2 {
+      position: absolute;
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: 600;
+      left: 50%;
+      top: 1.25rem;
+      transform: translateX(-50%) translateY(-50%);
+      text-align: center;
+      color: #fff;
+      margin: 0;
+    }
+  }
+}
+
+.popup2 img{
+  width: 100%;
+  display: block;
+}
+.popup2 article{
+    padding: 2rem;
+  height: 300px;
+  background-color: white;
+}
+
+.popup2 a.closePopUp{
+  font-family: avenir;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  top: 0.2em;
+  left: 0.375em;
+  margin: 0;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.popup2 a.newpage{
+  font-family: avenir;
+  font-weight: 700;  
+  color: #fff;
+  position: absolute;
+  top: 0.2em;
+  right: 0.375em;
+  margin: 0;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.popup2:target{
+  opacity: 1;
+  top: 0;
+}
+.popup2 .closePopUpOutSide{
+  position: absolute;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999991; 
+}
+
+
+.popup2:target .popUpContainer{
+  top: 50px;
+  left: 50%;
+  -webkit-transition: left  $duration-longer $easing-custom-1;
+  -moz-transition: left $duration-longer $easing-custom-1;
+  -o-transition: left $duration-longer $easing-custom-1;
+  transition: left $duration-longer $easing-custom-1;
+}
 
 //Status Message
 
