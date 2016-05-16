@@ -17,12 +17,12 @@ $duration-shorter: 70ms;
 $duration-short: 100ms;
 $duration-base: 200ms;
 $duration-long: 400ms;
-$duration-longer: 700ms;
+$duration-longer: 600ms;
 $duration-message: 2500ms;
 
 //easing tokens
-$easing-custom-1: cubic-bezier(.67, 0, 0, 1);
-$easing-custom-2: cubic-bezier(0,.22,.12,1);
+$easing-accelerate-1: cubic-bezier(.67,0,0,1);
+$easing-decelerate-1: cubic-bezier(0,.22,.12,1);
 
 @function shade($color, $percentage) {
   @return mix(black, $color, $percentage);
@@ -34,12 +34,12 @@ $easing-custom-2: cubic-bezier(0,.22,.12,1);
   }
   
   50% {
-    left:20rem;
+    left: 20rem;
     box-shadow: 0px 16px 16px 0px rgba(0,0,0,.16);
   }
 
   100% {
-    left:0rem;
+    left: 0rem;
   }
 }
 
@@ -189,7 +189,7 @@ span.thick {
   &.statusbar3 {
     margin-top: 1rem;
     cursor: pointer;
-    transition: all $duration-longer $easing-custom-1;
+    transition: all $duration-longer $easing-accelerate-1;
     width: 54rem;
     height: 7rem;
     background: repeating-linear-gradient(-45deg,#ececec,#ececec .5rem,#f3f3f3 .5rem,#f3f3f3 1rem);
@@ -233,13 +233,13 @@ span.thick {
   }
   
   &.easing-5 {
-    animation-timing-function: $easing-custom-1;
-    -webkit-animation-timing-function: $easing-custom-1;
+    animation-timing-function: $easing-accelerate-1;
+    -webkit-animation-timing-function: $easing-accelerate-1;
   }
   
   &.easing-6 {
-    animation-timing-function: $easing-custom-2;   
-    -webkit-animation-timing-function: $easing-custom-2;
+    animation-timing-function: $easing-decelerate-1;   
+    -webkit-animation-timing-function: $easing-decelerate-1;
   }
   
   &:hover {
@@ -260,7 +260,7 @@ span.thick {
   margin-bottom: 3rem;
   display: block;
   transition-duration: $duration-base;
-  transition-timing-fuction: $easing-custom-1;
+  transition-timing-fuction: $easing-accelerate-1;
   transition-property: all;  
 
   &.fadein {
@@ -275,7 +275,7 @@ span.thick {
   }
 
   &.slide {
-    transition-timing-fuction: $easing-custom-2;
+    transition-timing-fuction: $easing-decelerate-1;
   }
 
   &.top {
@@ -389,11 +389,11 @@ span.thick {
     margin: 0 auto;
     padding: 0px;
     background-color: $blue2;
-    -webkit-transition: .2s $easing-custom-1;
-    -moz-transition: .2s $easing-custom-1;
-    -o-transition: .2s $easing-custom-1;
-    -ms-transition: .2s $easing-custom-1;
-    transition: .2s $easing-custom-1;
+    -webkit-transition: .2s $easing-accelerate-1;
+    -moz-transition: .2s $easing-accelerate-1;
+    -o-transition: .2s $easing-accelerate-1;
+    -ms-transition: .2s $easing-accelerate-1;
+    transition: .2s $easing-accelerate-1;
 }
 
 .hovereffect2 {
@@ -404,11 +404,11 @@ span.thick {
     margin: 0 auto;
     padding: 0px;
     background-color: $blue2;
-    -webkit-transition: $duration-shorter $easing-custom-1;
-    -moz-transition: $duration-shorter $easing-custom-1;
-    -o-transition: $duration-shorter $easing-custom-1;
-    -ms-transition: $duration-shorter $easing-custom-1;
-    transition: $duration-shorter $easing-custom-1;
+    -webkit-transition: $duration-shorter $easing-accelerate-1;
+    -moz-transition: $duration-shorter $easing-accelerate-1;
+    -o-transition: $duration-shorter $easing-accelerate-1;
+    -ms-transition: $duration-shorter $easing-accelerate-1;
+    transition: $duration-shorter $easing-accelerate-1;
 }
 
 
@@ -486,7 +486,7 @@ $padding: 10px;
       left: 0.5rem;
       top: 14px;
       padding-top: 0.1rem;
-      transition: top $duration-base $easing-custom-1, opacity $duration-base $easing-custom-1;
+      transition: top $duration-base $easing-accelerate-1, opacity $duration-base $easing-accelerate-1;
       opacity: 0;
       color: #999;
       font-size: 1rem;
@@ -689,10 +689,10 @@ a#openPopUp:hover{
 }
 .popup:target .popUpContainer{
   top: 50px;
-  -webkit-transition: top  $duration-longer $easing-custom-2;
-  -moz-transition: top $duration-longer $easing-custom-2;
-  -o-transition: top $duration-longer $easing-custom-2;
-  transition: top $duration-longer $easing-custom-2;
+  -webkit-transition: top  $duration-longer $easing-decelerate-1;
+  -moz-transition: top $duration-longer $easing-decelerate-1;
+  -o-transition: top $duration-longer $easing-decelerate-1;
+  transition: top $duration-longer $easing-decelerate-1;
 }
 
 .popup2{
@@ -802,10 +802,10 @@ a#openPopUp:hover{
 .popup2:target .popUpContainer{
   top: 50px;
   left: 50%;
-  -webkit-transition: left  $duration-longer $easing-custom-1;
-  -moz-transition: left $duration-longer $easing-custom-1;
-  -o-transition: left $duration-longer $easing-custom-1;
-  transition: left $duration-longer $easing-custom-1;
+  -webkit-transition: left  $duration-longer $easing-accelerate-1;
+  -moz-transition: left $duration-longer $easing-accelerate-1;
+  -o-transition: left $duration-longer $easing-accelerate-1;
+  transition: left $duration-longer $easing-accelerate-1;
 }
 
 //Status Message
