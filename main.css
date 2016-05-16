@@ -86,7 +86,7 @@ span.thick {
     .demo.duration.long {
       transition-duration: 400ms; }
     .demo.duration.longer {
-      transition-duration: 700ms; }
+      transition-duration: 600ms; }
     .demo.duration.message {
       transition-duration: 2500ms; }
     .demo.duration.base-duration {
@@ -96,7 +96,7 @@ span.thick {
       border-radius: 50%; }
   .demo.statusbar {
     cursor: pointer;
-    transition: all 700ms linear;
+    transition: all 600ms linear;
     width: 54rem;
     height: 7rem;
     background: repeating-linear-gradient(-45deg, #ececec, #ececec 0.5rem, #f3f3f3 0.5rem, #f3f3f3 1rem); }
@@ -110,7 +110,7 @@ span.thick {
   .demo.statusbar3 {
     margin-top: 1rem;
     cursor: pointer;
-    transition: all 700ms cubic-bezier(0.67, 0, 0, 1);
+    transition: all 600ms cubic-bezier(0.67, 0, 0, 1);
     width: 54rem;
     height: 7rem;
     background: repeating-linear-gradient(-45deg, #ececec, #ececec 0.5rem, #f3f3f3 0.5rem, #f3f3f3 1rem); }
@@ -489,10 +489,10 @@ a#openPopUp:hover {
 
 .popup:target .popUpContainer {
   top: 50px;
-  -webkit-transition: top 700ms cubic-bezier(0, 0.22, 0.12, 1);
-  -moz-transition: top 700ms cubic-bezier(0, 0.22, 0.12, 1);
-  -o-transition: top 700ms cubic-bezier(0, 0.22, 0.12, 1);
-  transition: top 700ms cubic-bezier(0, 0.22, 0.12, 1); }
+  -webkit-transition: top 600ms cubic-bezier(0, 0.22, 0.12, 1);
+  -moz-transition: top 600ms cubic-bezier(0, 0.22, 0.12, 1);
+  -o-transition: top 600ms cubic-bezier(0, 0.22, 0.12, 1);
+  transition: top 600ms cubic-bezier(0, 0.22, 0.12, 1); }
 
 .popup2 {
   position: fixed;
@@ -588,10 +588,10 @@ a#openPopUp:hover {
 .popup2:target .popUpContainer {
   top: 50px;
   left: 50%;
-  -webkit-transition: left 700ms cubic-bezier(0.67, 0, 0, 1);
-  -moz-transition: left 700ms cubic-bezier(0.67, 0, 0, 1);
-  -o-transition: left 700ms cubic-bezier(0.67, 0, 0, 1);
-  transition: left 700ms cubic-bezier(0.67, 0, 0, 1); }
+  -webkit-transition: left 600ms cubic-bezier(0.67, 0, 0, 1);
+  -moz-transition: left 600ms cubic-bezier(0.67, 0, 0, 1);
+  -o-transition: left 600ms cubic-bezier(0.67, 0, 0, 1);
+  transition: left 600ms cubic-bezier(0.67, 0, 0, 1); }
 
 .messagebar {
   position: fixed;
