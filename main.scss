@@ -283,8 +283,6 @@ span.thick {
 
 }
 
-
-//
 .button {
     cursor: pointer;  
     position:relative;
@@ -569,7 +567,6 @@ input:checked + div {
 }
 
 //Modal
-
 #openPopUp{
   text-align:center;
   background-color: $gray-medium;
@@ -583,9 +580,11 @@ input:checked + div {
   -moz-transition:background-color 0.25s linear;
   -o-transition:background-color 0.25s linear;
 }
+
 a#openPopUp:hover{
   cursor: pointer;
 }
+
 .popup{
   position: fixed;
   top: -100vh;
@@ -603,6 +602,7 @@ a#openPopUp:hover{
   
 
 }
+
 .popup .popUpContainer{
   width: 100%;
   max-width: 64rem;
@@ -646,6 +646,7 @@ a#openPopUp:hover{
   width: 100%;
   display: block;
 }
+
 .popup article{
   padding: 2rem;
   height: 300px;
