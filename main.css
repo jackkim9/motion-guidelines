@@ -54,7 +54,8 @@ h5 {
 
 h6 {
   font-size: 1.35rem;
-  font-weight: 100; }
+  font-weight: 100;
+  margin-bottom: 0.5rem; }
 
 span.thick {
   position: relative;
@@ -651,23 +652,13 @@ a#openPopUp:hover {
   opacity: 1;
   top: 0; }
 
-/*
-table {
-  max-width: 55rem;
-}
+.inputgroup {
+  display: inline-block;
+  width: 100% input;
+    width-width: 10rem;
+    width-height: 2rem;
+    width-margin: 0.125rem; }
 
-.examples-duration {
-  tr {
-    padding-bottom: 3rem;
-    width: 100%;
-    td{
-      height: 20rem;
-      width: calc(55rem/3);
-    }
-  }
-
-}
-*/
 span.do, span.dont {
   height: 3rem; }
 
