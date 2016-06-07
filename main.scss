@@ -290,9 +290,7 @@ span.thick {
     height:60px;
     background-color: #dedede;
     text-align:center;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+    transition: background-color $duration-long $easing-decelerate-1;
    
   &.toggle-display{
     display: inline-block;
@@ -304,6 +302,7 @@ span.thick {
     
     &:hover {
       color: #ffffff;
+      background-color: $blue2;
       
       a {
         color: #ffffff;
@@ -547,6 +546,7 @@ span .toggle-label {
   background: #cdcdcd;
   border-radius: 1em;
   border: 0.185rem solid #cdcdcd;
+  cursor: pointer;
   
 }
 

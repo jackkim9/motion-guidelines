@@ -168,9 +168,7 @@ span.thick {
   height: 60px;
   background-color: #dedede;
   text-align: center;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s; }
+  transition: background-color 400ms cubic-bezier(0, 0.22, 0.12, 1); }
   .button.toggle-display {
     display: inline-block;
     background-color: #555555;
@@ -178,7 +176,8 @@ span.thick {
     width: 5rem;
     height: 2rem; }
   .button:hover {
-    color: #ffffff; }
+    color: #ffffff;
+    background-color: #74dcff; }
     .button:hover a {
       color: #ffffff;
       z-index: 1000; }
@@ -364,7 +363,8 @@ span .toggle-label {
   width: 2em;
   background: #cdcdcd;
   border-radius: 1em;
-  border: 0.185rem solid #cdcdcd; }
+  border: 0.185rem solid #cdcdcd;
+  cursor: pointer; }
 
 .switch div {
   height: 1em;
