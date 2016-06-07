@@ -885,7 +885,7 @@ a#openPopUp:hover{
 }
 
 //Reveal and Hide
-.inputgroup {
+.inputgroup-inner {
   display: inline-block;
   width: 100%;
 
@@ -893,6 +893,34 @@ a#openPopUp:hover{
     width: 10rem;
     height: 2rem;
     margin: 0.125rem;
+  }
+}
+
+.inputgroup {
+  visibility: visilbe;
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity $duration-longer $easing-accelerate-1, transform $duration-longer $easing-accelerate-1;
+
+  &.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.98);
+    transition: opacity $duration-short, visibility $duration-short;
+  }
+}
+
+.reveal-button {
+  width: 290px;
+  height: 60px;
+  background: #dedede;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+
+  h4 {
+    top: 50%;
   }
 }
 

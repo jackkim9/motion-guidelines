@@ -9,5 +9,9 @@ $(document).ready(function(){
 	    $('.notification-bar').removeClass('active');
 	  }, 3500);
 	});
+
+	$('.reveal-button').on('click', function(){
+		$('.inputgroup').toggleClass('hidden');
+	});
 });
 
