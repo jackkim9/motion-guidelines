@@ -718,7 +718,8 @@ span.do, span.dont {
   transform: translate3d(0, 0, 0); }
 
 #toggle-error {
-  width: 15rem;
+  width: 290px;
+  height: 60px;
   cursor: pointer;
   text-align: center;
   font-family: avenir;
@@ -726,6 +727,7 @@ span.do, span.dont {
   background: #333;
   border: 1px solid #000; }
   #toggle-error h4 {
-    top: 50%; }
+    top: 50%;
+    transform: translateY(-50%); }
 
 /*# sourceMappingURL=main.css.map */
