@@ -654,10 +654,11 @@ a#openPopUp:hover {
 
 .inputgroup {
   display: inline-block;
-  width: 100% input;
-    width-width: 10rem;
-    width-height: 2rem;
-    width-margin: 0.125rem; }
+  width: 100%; }
+  .inputgroup input {
+    width: 10rem;
+    height: 2rem;
+    margin: 0.125rem; }
 
 span.do, span.dont {
   height: 3rem; }
